@@ -35,7 +35,15 @@ Nav2Client::Nav2Client() : rclcpp::Node("nav2_send_goal"), id_(0)
   waypoints_file_1_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints1.csv";//自分でつけた
   waypoints_file_2_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints2.csv";//自分でつけた
   waypoints_file_3_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints3.csv";//自分でつけた
-  csv_file_ = {waypoints_file_1_, waypoints_file_2_, waypoints_file_3_};//自分で追加
+  waypoints_file_4_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints4.csv";//自分でつけた
+
+  csv_file_ = {waypoints_file_1_, waypoints_file_2_, waypoints_file_3_, waypoints_file_4_};//自分で追加
+
+  send_waypoint2_flag = 0;
+  send_waypoint3_flag = 0;
+  send_waypoint4_flag = 0;
+
+
 
   ReadWaypointsFromCSV(csv_file_[0], waypoints_);
   start_index_ = (size_t)start_index_int_;
@@ -113,7 +121,11 @@ void Nav2Client::ReadWaypointsFromCSV(std::string& csv_file, std::vector<waypoin
 void Nav2Client::SendWaypointsTimerCallback(){
   std::cout << "4" << std::endl;
   static size_t sending_index = start_index_ - 1;
-  static int state = SEND_WAYPOINTS;
+  //static int state = SEND_WAYPOINTS;
+  static int state = SEND_WAYPOINTS1;
+
+
+  /*
   auto msg = geometry_msgs::msg::Twist();
   for (int i = 0; i< 3; i++){
     rclcpp::sleep_for(500ms);
@@ -122,21 +134,98 @@ void Nav2Client::SendWaypointsTimerCallback(){
     twist_pub_->publish(msg);
     std::cout << "rotation" << std::endl;
   }
+  */
+
+
+
   std::cout << "sending_index" << sending_index << std::endl;
 
   switch (state)
   {
-  case SEND_WAYPOINTS:
+  case SEND_WAYPOINTS1:
     if(sending_index < waypoints_.size()){
       sending_index =  SendWaypointsOnce(sending_index);
+    }
+    if(is_goal_achieved_){//trueになったら
+      state = SEND_WAYPOINTS2;
+      is_goal_achieved_ = false;
+      is_goal_accepted_ = false;
+      is_aborted_ = false;
+    }
     break;
+
+  case SEND_WAYPOINTS2:
+    std::cout << "SEND_WAYPOINYS2" << std::endl;
+    if (send_waypoint2_flag == 0){
+      ReadWaypointsFromCSV(csv_file_[1], waypoints_);
+    }
+    send_waypoint2_flag = 1;
+    //sending_index = 0; //いらないかも
+    if(sending_index < waypoints_.size()){
+      sending_index =  SendWaypointsOnce(sending_index);
+//    if(is_goal_achieved_ == True){
+ //     state = SEMD_WAYPOINTS2;
+  //  }
+    }
+    if (is_goal_achieved_) {  // waypoint2に到達したら
+      state = SEND_WAYPOINTS3;
+      is_goal_achieved_ = false;
+      is_goal_accepted_ = false;
+      is_aborted_ = false;
+    }
+    break;
+
+  case SEND_WAYPOINTS3:
+    std::cout << "SEND_WAYPOINYS3" << std::endl;
+    if (send_waypoint3_flag == 0){
+      ReadWaypointsFromCSV(csv_file_[2], waypoints_);
+    }
+    send_waypoint3_flag = 1;
+    //sending_index = 0; //いらないかも
+    if(sending_index < waypoints_.size()){
+      sending_index =  SendWaypointsOnce(sending_index);
+//    if(is_goal_achieved_ == True){
+ //     state = SEMD_WAYPOINTS2;
+  //  }
+    }
+    if (is_goal_achieved_) {  // waypoint2に到達したら
+      state = SEND_WAYPOINTS4;
+      is_goal_achieved_ = false;
+      is_goal_accepted_ = false;
+      is_aborted_ = false;
+    }
+    break;
+
+  case SEND_WAYPOINTS4:
+    std::cout << "SEND_WAYPOINYS4" << std::endl;
+    if (send_waypoint4_flag == 0){
+      ReadWaypointsFromCSV(csv_file_[3], waypoints_);
+    }
+    send_waypoint4_flag = 1;
+    //sending_index = 0; //いらないかも
+    if(sending_index < waypoints_.size()){
+      sending_index =  SendWaypointsOnce(sending_index);
+//    if(is_goal_achieved_ == True){
+ //     state = SEMD_WAYPOINTS2;
+  //  }
+    }
+    if (is_goal_achieved_) {  // waypoint2に到達したら
+      state = FINISH_SENDING;
+      is_goal_achieved_ = false;
+      is_goal_accepted_ = false;
+      is_aborted_ = false;
+    }
+    break;
+  case FINISH_SENDING:
+    RCLCPP_INFO(this->get_logger(), "Waypoint sending is Finisihed.");
+    timer_->cancel();
+  break;
 
   default:
     RCLCPP_INFO(this->get_logger(), "UNKNOWN ERROR");
     timer_->cancel();
     break;
   }
-}
 }
 
 size_t Nav2Client::SendWaypointsOnce(size_t sending_index){

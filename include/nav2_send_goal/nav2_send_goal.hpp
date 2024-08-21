@@ -30,6 +30,11 @@
 #define WAITING_BUTTON 3
 #define FINISH_SENDING 4
 #define ROTATION 5
+#define SEND_WAYPOINTS1 6
+#define SEND_WAYPOINTS2 7
+#define SEND_WAYPOINTS3 8
+#define SEND_WAYPOINTS4 9
+
 
 
 using namespace std::chrono_literals;
@@ -68,6 +73,7 @@ private:
   std::string waypoints_file_1_;
   std::string waypoints_file_2_;
   std::string waypoints_file_3_;
+  std::string waypoints_file_4_;
   std::vector<std::string> csv_file_;//自分で追加
   rclcpp_action::Client<nav2_msgs::action::NavigateThroughPoses>::SharedPtr nav_through_poses_action_client_;
   rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateThroughPoses>::SharedPtr nav_through_poses_goal_handle_;
@@ -86,6 +92,11 @@ private:
   bool is_aborted_;
   bool is_standby_;
   bool is_goal_accepted_;
+
+  int send_waypoint2_flag;
+  int send_waypoint3_flag;
+  int send_waypoint4_flag;
+
 
   int16_t number_of_poses_remaining_;
 };
