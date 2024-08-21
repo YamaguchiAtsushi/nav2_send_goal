@@ -135,12 +135,12 @@ CMakeFiles/nav2_send_goal_uninstall.dir/clean:
 CMakeFiles/nav2_send_goal.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles --progress-num=1,2 "Built target nav2_send_goal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles --progress-num=1,2,3 "Built target nav2_send_goal"
 .PHONY : CMakeFiles/nav2_send_goal.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nav2_send_goal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nav2_send_goal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles 0
 .PHONY : CMakeFiles/nav2_send_goal.dir/rule

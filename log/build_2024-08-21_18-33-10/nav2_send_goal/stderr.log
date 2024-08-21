@@ -1,0 +1,50 @@
+In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In member function ‘[01m[Kvoid Nav2Client::SendWaypointsTimerCallback()[m[K’:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:28:30:[m[K [01;31m[Kerror: [m[Kjump to case label
+   28 | #define SEND_WAYPOINTS_CHECK [01;31m[K1[m[K
+      |                              [01;31m[K^[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:139:8:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KSEND_WAYPOINTS_CHECK[m[K’
+  139 |   case [01;36m[KSEND_WAYPOINTS_CHECK[m[K:
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:129:10:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> > msg[m[K’
+  129 |     auto [01;36m[Kmsg[m[K = geometry_msgs::msg::Twist();
+      |          [01;36m[K^~~[m[K
+In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:29:22:[m[K [01;31m[Kerror: [m[Kjump to case label
+   29 | #define WAITING_GOAL [01;31m[K2[m[K
+      |                      [01;31m[K^[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:152:8:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWAITING_GOAL[m[K’
+  152 |   case [01;36m[KWAITING_GOAL[m[K:
+      |        [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:129:10:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> > msg[m[K’
+  129 |     auto [01;36m[Kmsg[m[K = geometry_msgs::msg::Twist();
+      |          [01;36m[K^~~[m[K
+In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:30:24:[m[K [01;31m[Kerror: [m[Kjump to case label
+   30 | #define WAITING_BUTTON [01;31m[K3[m[K
+      |                        [01;31m[K^[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:165:8:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KWAITING_BUTTON[m[K’
+  165 |   case [01;36m[KWAITING_BUTTON[m[K:
+      |        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:129:10:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> > msg[m[K’
+  129 |     auto [01;36m[Kmsg[m[K = geometry_msgs::msg::Twist();
+      |          [01;36m[K^~~[m[K
+In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:31:24:[m[K [01;31m[Kerror: [m[Kjump to case label
+   31 | #define FINISH_SENDING [01;31m[K4[m[K
+      |                        [01;31m[K^[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:171:8:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KFINISH_SENDING[m[K’
+  171 |   case [01;36m[KFINISH_SENDING[m[K:
+      |        [01;36m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:129:10:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> > msg[m[K’
+  129 |     auto [01;36m[Kmsg[m[K = geometry_msgs::msg::Twist();
+      |          [01;36m[K^~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:176:3:[m[K [01;31m[Kerror: [m[Kjump to case label
+  176 |   [01;31m[Kdefault[m[K:
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:129:10:[m[K [01;36m[Knote: [m[K  crosses initialization of ‘[01m[Kgeometry_msgs::msg::Twist_<std::allocator<void> > msg[m[K’
+  129 |     auto [01;36m[Kmsg[m[K = geometry_msgs::msg::Twist();
+      |          [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/nav2_send_goal.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2

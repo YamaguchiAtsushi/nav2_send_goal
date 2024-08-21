@@ -234,6 +234,30 @@ src/nav2_send_goal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.s
 .PHONY : src/nav2_send_goal.cpp.s
 
+src/nav2_send_goal_node.o: src/nav2_send_goal_node.cpp.o
+.PHONY : src/nav2_send_goal_node.o
+
+# target to build an object file
+src/nav2_send_goal_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal_node.cpp.o
+.PHONY : src/nav2_send_goal_node.cpp.o
+
+src/nav2_send_goal_node.i: src/nav2_send_goal_node.cpp.i
+.PHONY : src/nav2_send_goal_node.i
+
+# target to preprocess a source file
+src/nav2_send_goal_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal_node.cpp.i
+.PHONY : src/nav2_send_goal_node.cpp.i
+
+src/nav2_send_goal_node.s: src/nav2_send_goal_node.cpp.s
+.PHONY : src/nav2_send_goal_node.s
+
+# target to generate assembly for a file
+src/nav2_send_goal_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal_node.cpp.s
+.PHONY : src/nav2_send_goal_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -253,6 +277,9 @@ help:
 	@echo "... src/nav2_send_goal.o"
 	@echo "... src/nav2_send_goal.i"
 	@echo "... src/nav2_send_goal.s"
+	@echo "... src/nav2_send_goal_node.o"
+	@echo "... src/nav2_send_goal_node.i"
+	@echo "... src/nav2_send_goal_node.s"
 .PHONY : help
 
 

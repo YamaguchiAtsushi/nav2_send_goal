@@ -60,12 +60,15 @@ private:
   void SendWaypointsTimerCallback();
   size_t SendWaypointsOnce(size_t sending_index);
 
-
 private:
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr twist_pub_;
   rclcpp::TimerBase::SharedPtr timer_;
   int id_;
-  std::string csv_file_;
+  //std::string csv_file_;
+  std::string waypoints_file_1_;
+  std::string waypoints_file_2_;
+  std::string waypoints_file_3_;
+  std::vector<std::string> csv_file_;//自分で追加
   rclcpp_action::Client<nav2_msgs::action::NavigateThroughPoses>::SharedPtr nav_through_poses_action_client_;
   rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateThroughPoses>::SharedPtr nav_through_poses_goal_handle_;
   rclcpp_action::Client<nav2_msgs::action::NavigateThroughPoses>::SendGoalOptions send_goal_options_;
