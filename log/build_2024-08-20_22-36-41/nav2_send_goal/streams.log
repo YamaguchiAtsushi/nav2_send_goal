@@ -1,0 +1,83 @@
+[0.013s] Invoking command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target nav2_send_goal[0m
+[0.076s] [ 50%] [32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o[0m
+[2.925s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[2.925s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:16:50:[m[K [01;31m[Kerror: [m[K‘[01m[KNavigateThroughPose[m[K’ in namespace ‘[01m[Knav2_msgs::action[m[K’ does not name a type; did you mean ‘[01m[KNavigateThroughPoses[m[K’?
+[2.925s]    16 | hroughPose = nav2_msgs::action::[01;31m[KNavigateThroughPose[m[K;
+[2.925s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.925s]       |                                 [32m[KNavigateThroughPoses[m[K
+[2.939s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:17:73:[m[K [01;31m[Kerror: [m[K‘[01m[KNavigateThroughPose[m[K’ was not declared in this scope
+[2.939s]    17 | rclcpp_action::ClientGoalHandle<[01;31m[KNavigateThroughPose[m[K>;
+[2.939s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.939s] 
+[2.940s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:17:92:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.940s]    17 | ion::ClientGoalHandle<NavigateThroughPose[01;31m[K>[m[K;
+[2.940s]       |                                          [01;31m[K^[m[K
+[2.940s] 
+[2.954s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:18:25:[m[K [01;31m[Kerror: [m[K‘[01m[KNavigateThroughPose[m[K’ was not declared in this scope
+[2.954s]    18 |   rclcpp_action::Client<[01;31m[KNavigateThroughPose[m[K>::SharedPtr client_ptr_;
+[2.955s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.955s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:18:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.955s]    18 | tion::Client<NavigateThroughPose[01;31m[K>[m[K::SharedPtr client_ptr_;
+[2.955s]       |                                 [01;31m[K^[m[K
+[2.955s] 
+[2.955s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:18:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.955s]    18 | n::Client<NavigateThroughPose>::[01;31m[KSharedPtr[m[K client_ptr_;
+[2.955s]       |                                 [01;31m[K^~~~~~~~~[m[K
+[2.955s]       |                                          [32m[K;[m[K
+[2.958s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:18:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_ptr_[m[K’ does not name a type
+[2.958s]    18 | NavigateThroughPose>::SharedPtr [01;31m[Kclient_ptr_[m[K;
+[2.958s]       |                                 [01;31m[K^~~~~~~~~~~[m[K
+[2.958s] 
+[3.002s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In constructor ‘[01m[KNav2Client::Nav2Client()[m[K’:
+[3.002s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3:60:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KNav2Client[m[K’ does not have any field named ‘[01m[Kid_[m[K’
+[3.002s]     3 | () : rclcpp::Node("nav2_send_goal"), [01;31m[Kid_[m[K(0)
+[3.002s]       |                                      [01;31m[K^~~[m[K
+[3.002s] 
+[3.010s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:5:3:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_through_poses_action_client[m[K’ was not declared in this scope; did you mean ‘[01m[Knav_through_poses_action_client_[m[K’?
+[3.010s]     5 |   [01;31m[Knav_through_poses_action_client[m[K = rclcpp_action::create_client<nav2_msgs::action::NavigateThroughPoses>(this, "navigate_through_poses");
+[3.010s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.010s]       |   [32m[Knav_through_poses_action_client_[m[K
+[3.018s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:6:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSendGoal[m[K’ was not declared in this scope
+[3.018s]     6 |   [01;31m[KSendGoal[m[K();
+[3.018s]       |   [01;31m[K^~~~~~~~[m[K
+[3.018s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K At global scope:
+[3.018s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:10:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid Nav2Client::SendGoal()[m[K’
+[3.018s]    10 | void [01;31m[KNav2Client[m[K::SendGoal()
+[3.018s]       |      [01;31m[K^~~~~~~~~~[m[K
+[3.018s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:10:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid Nav2Client::SendGoal()[m[K’
+[3.019s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[3.019s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:14:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Nav2Client[m[K’ defined here
+[3.019s]    14 | class [01;36m[KNav2Client[m[K : public rclcpp::Node{
+[3.019s]       |       [01;36m[K^~~~~~~~~~[m[K
+[3.019s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:39:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KfeedbackCallback[m[K’ declared void
+[3.019s]    39 | void [01;31m[KNav2Client[m[K::feedbackCallback(GoalHandleNavigateToPose::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)
+[3.019s]       |      [01;31m[K^~~~~~~~~~[m[K
+[3.019s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:39:35:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleNavigateToPose[m[K’ has not been declared
+[3.019s]    39 | id Nav2Client::feedbackCallback([01;31m[KGoalHandleNavigateToPose[m[K::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)
+[3.020s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.020s] 
+[3.020s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:39:71:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[3.020s]    39 | HandleNavigateToPose::SharedPtr,[01;31m[Kconst[m[K std::shared_ptr<const NavigateToPose::Feedback> feedback)
+[3.020s]       |                                 [01;31m[K^~~~~[m[K
+[3.020s] 
+[3.029s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:39:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleNavigateToPose[m[K’ does not name a type
+[3.029s]    44 | av2Client::resultCallback(const [01;31m[KGoalHandleNavigateToPose[m[K::WrappedResult & result)
+[3.029s]       |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.029s] 
+[3.029s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:79:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[3.030s]    44 | ndleNavigateToPose::WrappedResult [01;31m[K&[m[K result)
+[3.030s]       |                                   [01;31m[K^[m[K
+[3.030s] 
+[3.030s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:78:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[3.030s]    44 | ndleNavigateToPose::WrappedResult[01;31m[K [m[K[32m[K&[m[K result)
+[3.030s]       |                                  [01;31m[K^[m[K[32m[K~[m[K
+[3.030s]       |                                  [32m[K)[m[K
+[3.030s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:81:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kresult[m[K’
+[3.030s]    44 | ndleNavigateToPose::WrappedResult & [01;31m[Kresult[m[K)
+[3.031s]       |                                     [01;31m[K^~~~~~[m[K
+[3.031s] 
+[3.679s] gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] エラー 1
+[3.679s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/nav2_send_goal.dir/all] エラー 2
+[3.679s] gmake: *** [Makefile:146: all] エラー 2
+[3.682s] Invoked command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8

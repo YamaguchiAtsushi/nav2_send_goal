@@ -1,0 +1,268 @@
+[0.000000] (-) TimerEvent: {}
+[0.000114] (nav2_send_goal) JobQueued: {'identifier': 'nav2_send_goal', 'dependencies': OrderedDict()}
+[0.000144] (nav2_send_goal) JobStarted: {'identifier': 'nav2_send_goal'}
+[0.009556] (nav2_send_goal) JobProgress: {'identifier': 'nav2_send_goal', 'progress': 'cmake'}
+[0.010060] (nav2_send_goal) Command: {'cmd': ['/usr/bin/cmake', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal', '-DCMAKE_INSTALL_PREFIX=/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal'], 'cwd': '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamaguchi-a'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/yamaguchi-a'), ('OLDPWD', '/home/yamaguchi-a/turtlebot3_ws/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1394'), ('SYSTEMD_EXEC_PID', '1913'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '25893'), ('COLCON_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install:/home/yamaguchi-a/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'yamaguchi-a'), ('JOURNAL_STREAM', '8:35106'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yamaguchi-a'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yamaguchia-ThinkPad-X1-Carbon-7th:@/tmp/.ICE-unix/1728,unix/yamaguchia-ThinkPad-X1-Carbon-7th:/tmp/.ICE-unix/1728'), ('INVOCATION_ID', '7856ea73422441489fa45bbcf66404ea'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9549b0ca-8767-488b-b067-76d0d387b29c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal'), ('TURTLEBOT3_MODEL', 'burger'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble')]), 'shell': False}
+[0.067032] (nav2_send_goal) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099298] (-) TimerEvent: {}
+[0.125720] (nav2_send_goal) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.133511] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199458] (-) TimerEvent: {}
+[0.205209] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.217062] (nav2_send_goal) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.217277] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.217645] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.221415] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299569] (-) TimerEvent: {}
+[0.309027] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.322241] (nav2_send_goal) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.322563] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.323247] (nav2_send_goal) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.328099] (nav2_send_goal) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.399692] (-) TimerEvent: {}
+[0.491649] (nav2_send_goal) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499781] (-) TimerEvent: {}
+[0.600058] (-) TimerEvent: {}
+[0.655872] (nav2_send_goal) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.661934] (nav2_send_goal) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.671465] (nav2_send_goal) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.685743] (nav2_send_goal) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700211] (-) TimerEvent: {}
+[0.704940] (nav2_send_goal) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.757012] (nav2_send_goal) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.760352] (nav2_send_goal) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.800342] (-) TimerEvent: {}
+[0.857724] (nav2_send_goal) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.888185] (nav2_send_goal) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.900472] (-) TimerEvent: {}
+[0.931773] (nav2_send_goal) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.942730] (nav2_send_goal) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.000577] (-) TimerEvent: {}
+[1.016510] (nav2_send_goal) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.017059] (nav2_send_goal) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.095324] (nav2_send_goal) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.096866] (nav2_send_goal) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.100647] (-) TimerEvent: {}
+[1.162420] (nav2_send_goal) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[1.200771] (-) TimerEvent: {}
+[1.203163] (nav2_send_goal) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.15 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.270426] (nav2_send_goal) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[1.300860] (-) TimerEvent: {}
+[1.341428] (nav2_send_goal) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.366422] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.366682] (nav2_send_goal) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include\n'}
+[1.366814] (nav2_send_goal) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.369741] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.376441] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.376665] (nav2_send_goal) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.377749] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.379081] (nav2_send_goal) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.390175] (nav2_send_goal) StdoutLine: {'line': b'-- Generating done\n'}
+[1.393266] (nav2_send_goal) StdoutLine: {'line': b'-- Build files have been written to: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal\n'}
+[1.400978] (-) TimerEvent: {}
+[1.403939] (nav2_send_goal) CommandEnded: {'returncode': 0}
+[1.404544] (nav2_send_goal) JobProgress: {'identifier': 'nav2_send_goal', 'progress': 'build'}
+[1.405808] (nav2_send_goal) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal', '--', '-j8', '-l8'], 'cwd': '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamaguchi-a'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/yamaguchi-a'), ('OLDPWD', '/home/yamaguchi-a/turtlebot3_ws/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1394'), ('SYSTEMD_EXEC_PID', '1913'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '25893'), ('COLCON_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install:/home/yamaguchi-a/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'yamaguchi-a'), ('JOURNAL_STREAM', '8:35106'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yamaguchi-a'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yamaguchia-ThinkPad-X1-Carbon-7th:@/tmp/.ICE-unix/1728,unix/yamaguchia-ThinkPad-X1-Carbon-7th:/tmp/.ICE-unix/1728'), ('INVOCATION_ID', '7856ea73422441489fa45bbcf66404ea'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9549b0ca-8767-488b-b067-76d0d387b29c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal'), ('TURTLEBOT3_MODEL', 'burger'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble')]), 'shell': False}
+[1.458628] (nav2_send_goal) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o\x1b[0m\n'}
+[1.501086] (-) TimerEvent: {}
+[1.601382] (-) TimerEvent: {}
+[1.701679] (-) TimerEvent: {}
+[1.802005] (-) TimerEvent: {}
+[1.902284] (-) TimerEvent: {}
+[2.002666] (-) TimerEvent: {}
+[2.103032] (-) TimerEvent: {}
+[2.203316] (-) TimerEvent: {}
+[2.303631] (-) TimerEvent: {}
+[2.403954] (-) TimerEvent: {}
+[2.504227] (-) TimerEvent: {}
+[2.604517] (-) TimerEvent: {}
+[2.704816] (-) TimerEvent: {}
+[2.805162] (-) TimerEvent: {}
+[2.905494] (-) TimerEvent: {}
+[3.005816] (-) TimerEvent: {}
+[3.106143] (-) TimerEvent: {}
+[3.206484] (-) TimerEvent: {}
+[3.306810] (-) TimerEvent: {}
+[3.407189] (-) TimerEvent: {}
+[3.507481] (-) TimerEvent: {}
+[3.607834] (-) TimerEvent: {}
+[3.708179] (-) TimerEvent: {}
+[3.808567] (-) TimerEvent: {}
+[3.908923] (-) TimerEvent: {}
+[4.009250] (-) TimerEvent: {}
+[4.109534] (-) TimerEvent: {}
+[4.183289] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:8:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNav2Client\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.183640] (nav2_send_goal) StderrLine: {'line': b'    8 | \x1b[01;31m\x1b[KNav2Client\x1b[m\x1b[K::Nav2Client() : rclcpp::Node("nav2_send_goal"), id_(0)\n'}
+[4.183716] (nav2_send_goal) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.183780] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:15:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNav2Client\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.183842] (nav2_send_goal) StderrLine: {'line': b'   15 | void \x1b[01;31m\x1b[KNav2Client\x1b[m\x1b[K::SendGoal()\n'}
+[4.183927] (nav2_send_goal) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.183996] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid SendGoal()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.184077] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:18:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.184275] (nav2_send_goal) StderrLine: {'line': b'   18 |   while (!\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->client_ptr_->wait_for_action_server()) {\n'}
+[4.184377] (nav2_send_goal) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.184447] (nav2_send_goal) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.184523] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.184860] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.184932] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.185010] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.185076] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.185146] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.185242] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.185345] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.185447] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.185536] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3\x1b[m\x1b[K:\n'}
+[4.185599] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.185664] (nav2_send_goal) StderrLine: {'line': b'   19 |     RCLCPP_INFO(\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(), "Waiting for action server...");\n'}
+[4.185724] (nav2_send_goal) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.185782] (nav2_send_goal) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23\x1b[m\x1b[K,\n'}
+[4.185843] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.185910] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.186011] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.186116] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.186218] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.186279] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.186345] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.186418] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.186479] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.186549] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.186632] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3\x1b[m\x1b[K:\n'}
+[4.186693] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.186763] (nav2_send_goal) StderrLine: {'line': b'  106 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[4.186852] (nav2_send_goal) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.186949] (nav2_send_goal) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.187011] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.187076] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.187134] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.187192] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.187249] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.187306] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.187364] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.187422] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.187480] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.187537] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3\x1b[m\x1b[K:\n'}
+[4.187596] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.187655] (nav2_send_goal) StderrLine: {'line': b'   19 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Waiting for action server...");\n'}
+[4.187713] (nav2_send_goal) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.187771] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.187829] (nav2_send_goal) StderrLine: {'line': b'   19 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Waiting for action server...");\n'}
+[4.187886] (nav2_send_goal) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.187949] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.188007] (nav2_send_goal) StderrLine: {'line': b'   19 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(get_logger(), "Waiting for action server...");\n'}
+[4.188065] (nav2_send_goal) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.188121] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:23:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNavigateToPose\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.188179] (nav2_send_goal) StderrLine: {'line': b'   23 |   auto goal_msg = \x1b[01;31m\x1b[KNavigateToPose\x1b[m\x1b[K::Goal();\n'}
+[4.188237] (nav2_send_goal) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.188299] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:24:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.188359] (nav2_send_goal) StderrLine: {'line': b'   24 |   goal_msg.pose.header.stamp = \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->now();\n'}
+[4.188417] (nav2_send_goal) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.193407] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:35:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNavigateThroughPose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.193569] (nav2_send_goal) StderrLine: {'line': b'   35 | options = rclcpp_action::Client<\x1b[01;31m\x1b[KNavigateThroughPose\x1b[m\x1b[K>::SendGoalOptions();\n'}
+[4.193636] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.193694] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.193752] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:35:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.193811] (nav2_send_goal) StderrLine: {'line': b'   35 | tion::Client<NavigateThroughPose\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SendGoalOptions();\n'}
+[4.193868] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.193925] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.193982] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNav2Client\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.194041] (nav2_send_goal) StderrLine: {'line': b'   36 | .feedback_callback = std::bind(&\x1b[01;31m\x1b[KNav2Client\x1b[m\x1b[K::feedbackCallback, this, _1, _2);\n'}
+[4.194099] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.194156] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.194213] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.194299] (nav2_send_goal) StderrLine: {'line': b'   36 | (&Nav2Client::feedbackCallback, \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K, _1, _2);\n'}
+[4.194456] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.194527] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.194600] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:88:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_1\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.194669] (nav2_send_goal) StderrLine: {'line': b'   36 | av2Client::feedbackCallback, this, \x1b[01;31m\x1b[K_1\x1b[m\x1b[K, _2);\n'}
+[4.194729] (nav2_send_goal) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.194787] (nav2_send_goal) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\n'}
+[4.194852] (nav2_send_goal) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[4.194916] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[4.195082] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[4.195144] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.195203] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.195261] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.195318] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3\x1b[m\x1b[K:\n'}
+[4.195376] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:225:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_1\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.195435] (nav2_send_goal) StderrLine: {'line': b'  225 |     extern const _Placeholder<1> \x1b[01;36m\x1b[K_1\x1b[m\x1b[K;\n'}
+[4.195494] (nav2_send_goal) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.195552] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:92:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K_2\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_2\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.195612] (nav2_send_goal) StderrLine: {'line': b'   36 | av2Client::feedbackCallback, this, _1, \x1b[01;31m\x1b[K_2\x1b[m\x1b[K);\n'}
+[4.195670] (nav2_send_goal) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.195727] (nav2_send_goal) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[Kstd::placeholders::_2\x1b[m\x1b[K\n'}
+[4.195784] (nav2_send_goal) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[4.195847] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[4.195905] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[4.195962] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.196019] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.196076] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.196133] (nav2_send_goal) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3\x1b[m\x1b[K:\n'}
+[4.196190] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/functional:226:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::placeholders::_2\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[4.196247] (nav2_send_goal) StderrLine: {'line': b'  226 |     extern const _Placeholder<2> \x1b[01;36m\x1b[K_2\x1b[m\x1b[K;\n'}
+[4.196304] (nav2_send_goal) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.196361] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNav2Client\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.196424] (nav2_send_goal) StderrLine: {'line': b'   37 | ns.result_callback = std::bind(&\x1b[01;31m\x1b[KNav2Client\x1b[m\x1b[K::resultCallback, this, _1);\n'}
+[4.196481] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.196538] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.196595] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:37:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.196652] (nav2_send_goal) StderrLine: {'line': b'   37 | ind(&Nav2Client::resultCallback, \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K, _1);\n'}
+[4.196708] (nav2_send_goal) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.196765] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.201693] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:38:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksend_goal_options_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.201948] (nav2_send_goal) StderrLine: {'line': b'   38 |   \x1b[01;31m\x1b[Ksend_goal_options_\x1b[m\x1b[K.goal_response_callback = std::bind(&Nav2Client::NavThroughPosesGoalResponseCallback, this, std::placeholders::_1);\n'}
+[4.202091] (nav2_send_goal) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.202193] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:38:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNav2Client\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.202259] (nav2_send_goal) StderrLine: {'line': b'   38 | _response_callback = std::bind(&\x1b[01;31m\x1b[KNav2Client\x1b[m\x1b[K::NavThroughPosesGoalResponseCallback, this, std::placeholders::_1);\n'}
+[4.202331] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.202415] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.202508] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:38:107:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[4.202584] (nav2_send_goal) StderrLine: {'line': b'   38 | roughPosesGoalResponseCallback, \x1b[01;31m\x1b[Kthis\x1b[m\x1b[K, std::placeholders::_1);\n'}
+[4.202665] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.202724] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.206986] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:41:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclient_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.207191] (nav2_send_goal) StderrLine: {'line': b'   41 |   \x1b[01;31m\x1b[Kclient_ptr_\x1b[m\x1b[K->async_send_goal(goal_msg, send_goal_options);\n'}
+[4.207391] (nav2_send_goal) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.207470] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:\x1b[m\x1b[K At global scope:\n'}
+[4.207535] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNav2Client\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.207597] (nav2_send_goal) StderrLine: {'line': b'   44 | void \x1b[01;31m\x1b[KNav2Client\x1b[m\x1b[K::feedbackCallback(GoalHandleNavigateToPose::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)\n'}
+[4.207665] (nav2_send_goal) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.207722] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[KfeedbackCallback\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[4.207781] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGoalHandleNavigateToPose\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.207840] (nav2_send_goal) StderrLine: {'line': b'   44 | id Nav2Client::feedbackCallback(\x1b[01;31m\x1b[KGoalHandleNavigateToPose\x1b[m\x1b[K::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)\n'}
+[4.207897] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.207954] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.208010] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.208072] (nav2_send_goal) StderrLine: {'line': b'   44 | HandleNavigateToPose::SharedPtr,\x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<const NavigateToPose::Feedback> feedback)\n'}
+[4.208129] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.208186] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.208243] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KNav2Client\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.208301] (nav2_send_goal) StderrLine: {'line': b'   49 | void \x1b[01;31m\x1b[KNav2Client\x1b[m\x1b[K::resultCallback(const GoalHandleNavigateToPose::WrappedResult & result)\n'}
+[4.208359] (nav2_send_goal) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.209633] (-) TimerEvent: {}
+[4.211856] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KGoalHandleNavigateToPose\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.211996] (nav2_send_goal) StderrLine: {'line': b'   49 | av2Client::resultCallback(const \x1b[01;31m\x1b[KGoalHandleNavigateToPose\x1b[m\x1b[K::WrappedResult & result)\n'}
+[4.212065] (nav2_send_goal) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.212128] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.212186] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:79:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.212247] (nav2_send_goal) StderrLine: {'line': b'   49 | ndleNavigateToPose::WrappedResult \x1b[01;31m\x1b[K&\x1b[m\x1b[K result)\n'}
+[4.212304] (nav2_send_goal) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.212361] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.212417] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:78:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.212485] (nav2_send_goal) StderrLine: {'line': b'   49 | ndleNavigateToPose::WrappedResult\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[K result)\n'}
+[4.212547] (nav2_send_goal) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[4.212604] (nav2_send_goal) StderrLine: {'line': b'      |                                  \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[4.212660] (nav2_send_goal) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.212718] (nav2_send_goal) StderrLine: {'line': b'   49 | ndleNavigateToPose::WrappedResult & \x1b[01;31m\x1b[Kresult\x1b[m\x1b[K)\n'}
+[4.212775] (nav2_send_goal) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.212832] (nav2_send_goal) StderrLine: {'line': b'\n'}
+[4.309875] (-) TimerEvent: {}
+[4.410195] (-) TimerEvent: {}
+[4.510519] (-) TimerEvent: {}
+[4.610826] (-) TimerEvent: {}
+[4.711158] (-) TimerEvent: {}
+[4.721250] (nav2_send_goal) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 1\n'}
+[4.721487] (nav2_send_goal) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/nav2_send_goal.dir/all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[4.722100] (nav2_send_goal) StderrLine: {'line': b'gmake: *** [Makefile:146: all] \xe3\x82\xa8\xe3\x83\xa9\xe3\x83\xbc 2\n'}
+[4.724579] (nav2_send_goal) CommandEnded: {'returncode': 2}
+[4.764653] (nav2_send_goal) JobEnded: {'identifier': 'nav2_send_goal', 'rc': 2}
+[4.775335] (-) EventReactorShutdown: {}

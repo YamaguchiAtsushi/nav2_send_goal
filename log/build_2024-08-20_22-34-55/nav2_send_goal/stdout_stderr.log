@@ -1,0 +1,210 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+-- Found nav2_msgs: 1.1.15 (/opt/ros/humble/share/nav2_msgs/cmake)
+-- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal
+[ 50%] [32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o[0m
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:8:1:[m[K [01;31m[Kerror: [m[K‘[01m[KNav2Client[m[K’ does not name a type
+    8 | [01;31m[KNav2Client[m[K::Nav2Client() : rclcpp::Node("nav2_send_goal"), id_(0)
+      | [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:15:6:[m[K [01;31m[Kerror: [m[K‘[01m[KNav2Client[m[K’ has not been declared
+   15 | void [01;31m[KNav2Client[m[K::SendGoal()
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In function ‘[01m[Kvoid SendGoal()[m[K’:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:18:11:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   18 |   while (![01;31m[Kthis[m[K->client_ptr_->wait_for_action_server()) {
+      |           [01;31m[K^~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+   19 |     RCLCPP_INFO([01;31m[Kget_logger[m[K(), "Waiting for action server...");
+      |                 [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/logger.hpp:106:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  106 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Waiting for action server...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Waiting for action server...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:19:5:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   19 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(), "Waiting for action server...");
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:23:19:[m[K [01;31m[Kerror: [m[K‘[01m[KNavigateToPose[m[K’ has not been declared
+   23 |   auto goal_msg = [01;31m[KNavigateToPose[m[K::Goal();
+      |                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:24:32:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   24 |   goal_msg.pose.header.stamp = [01;31m[Kthis[m[K->now();
+      |                                [01;31m[K^~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:35:50:[m[K [01;31m[Kerror: [m[K‘[01m[KNavigateThroughPose[m[K’ was not declared in this scope
+   35 | options = rclcpp_action::Client<[01;31m[KNavigateThroughPose[m[K>::SendGoalOptions();
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:35:69:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   35 | tion::Client<NavigateThroughPose[01;31m[K>[m[K::SendGoalOptions();
+      |                                 [01;31m[K^[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:52:[m[K [01;31m[Kerror: [m[K‘[01m[KNav2Client[m[K’ has not been declared
+   36 | .feedback_callback = std::bind(&[01;31m[KNav2Client[m[K::feedbackCallback, this, _1, _2);
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:82:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   36 | (&Nav2Client::feedbackCallback, [01;31m[Kthis[m[K, _1, _2);
+      |                                 [01;31m[K^~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:88:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+   36 | av2Client::feedbackCallback, this, [01;31m[K_1[m[K, _2);
+      |                                    [01;31m[K^~[m[K
+      |                                    [32m[Kstd::placeholders::_1[m[K
+In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3[m[K:
+[01m[K/usr/include/c++/11/functional:225:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+  225 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+      |                                  [01;36m[K^~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:36:92:[m[K [01;31m[Kerror: [m[K‘[01m[K_2[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_2[m[K’?
+   36 | av2Client::feedbackCallback, this, _1, [01;31m[K_2[m[K);
+      |                                        [01;31m[K^~[m[K
+      |                                        [32m[Kstd::placeholders::_2[m[K
+In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:3[m[K:
+[01m[K/usr/include/c++/11/functional:226:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_2[m[K’ declared here
+  226 |     extern const _Placeholder<2> [01;36m[K_2[m[K;
+      |                                  [01;36m[K^~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:37:50:[m[K [01;31m[Kerror: [m[K‘[01m[KNav2Client[m[K’ has not been declared
+   37 | ns.result_callback = std::bind(&[01;31m[KNav2Client[m[K::resultCallback, this, _1);
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:37:78:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   37 | ind(&Nav2Client::resultCallback, [01;31m[Kthis[m[K, _1);
+      |                                  [01;31m[K^~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:38:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksend_goal_options_[m[K’ was not declared in this scope
+   38 |   [01;31m[Ksend_goal_options_[m[K.goal_response_callback = std::bind(&Nav2Client::NavThroughPosesGoalResponseCallback, this, std::placeholders::_1);
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:38:58:[m[K [01;31m[Kerror: [m[K‘[01m[KNav2Client[m[K’ has not been declared
+   38 | _response_callback = std::bind(&[01;31m[KNav2Client[m[K::NavThroughPosesGoalResponseCallback, this, std::placeholders::_1);
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:38:107:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   38 | roughPosesGoalResponseCallback, [01;31m[Kthis[m[K, std::placeholders::_1);
+      |                                 [01;31m[K^~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:41:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kclient_ptr_[m[K’ was not declared in this scope
+   41 |   [01;31m[Kclient_ptr_[m[K->async_send_goal(goal_msg, send_goal_options);
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K At global scope:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:6:[m[K [01;31m[Kerror: [m[K‘[01m[KNav2Client[m[K’ has not been declared
+   44 | void [01;31m[KNav2Client[m[K::feedbackCallback(GoalHandleNavigateToPose::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KfeedbackCallback[m[K’ declared void
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:35:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleNavigateToPose[m[K’ has not been declared
+   44 | id Nav2Client::feedbackCallback([01;31m[KGoalHandleNavigateToPose[m[K::SharedPtr,const std::shared_ptr<const NavigateToPose::Feedback> feedback)
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:44:71:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   44 | HandleNavigateToPose::SharedPtr,[01;31m[Kconst[m[K std::shared_ptr<const NavigateToPose::Feedback> feedback)
+      |                                 [01;31m[K^~~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:6:[m[K [01;31m[Kerror: [m[K‘[01m[KNav2Client[m[K’ has not been declared
+   49 | void [01;31m[KNav2Client[m[K::resultCallback(const GoalHandleNavigateToPose::WrappedResult & result)
+      |      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:39:[m[K [01;31m[Kerror: [m[K‘[01m[KGoalHandleNavigateToPose[m[K’ does not name a type
+   49 | av2Client::resultCallback(const [01;31m[KGoalHandleNavigateToPose[m[K::WrappedResult & result)
+      |                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:79:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   49 | ndleNavigateToPose::WrappedResult [01;31m[K&[m[K result)
+      |                                   [01;31m[K^[m[K
+
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:78:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   49 | ndleNavigateToPose::WrappedResult[01;31m[K [m[K[32m[K&[m[K result)
+      |                                  [01;31m[K^[m[K[32m[K~[m[K
+      |                                  [32m[K)[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:49:81:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kresult[m[K’
+   49 | ndleNavigateToPose::WrappedResult & [01;31m[Kresult[m[K)
+      |                                     [01;31m[K^~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/nav2_send_goal.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2

@@ -14,6 +14,10 @@ endif()
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(nav2_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+
+
 
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
@@ -24,8 +28,8 @@ include_directories(
 
 #add_executable(nav2_send_goal src/nav2_send_goal.cpp)
 
-ament_auto_add_executable(nav2_send_goal src/nav2_send_goal.cpp)
-ament_target_dependencies(nav2_send_goal rclcpp rclcpp_action nav2_msgs)
+ament_auto_add_executable(nav2_send_goal src/nav2_send_goal.cpp src/nav2_send_goal_node.cpp)
+ament_target_dependencies(nav2_send_goal rclcpp rclcpp_action nav2_msgs tf2 tf2_geometry_msgs)
 
 
 install(TARGETS
