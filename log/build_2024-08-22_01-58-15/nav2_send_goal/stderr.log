@@ -1,0 +1,24 @@
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In member function ‘[01m[Kvoid Nav2Client::SendWaypointsTimerCallback()[m[K’:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:147:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KNav2Client::SendWaypointsOnce(size_t&, std::vector<waypoint_info>&)[m[K’
+  147 |       sending_index =  [01;31m[KSendWaypointsOnce(sending_index, waypoints_1_)[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t)[m[K’
+   66 |   size_t [01;36m[KSendWaypointsOnce[m[K(size_t sending_index);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K At global scope:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:231:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t, std::vector<waypoint_info>&)[m[K’
+  231 | size_t [01;31m[KNav2Client[m[K::SendWaypointsOnce(size_t sending_index, std::vector<waypoint_info>& waypoints){
+      |        [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t)[m[K’
+   66 |   size_t [01;36m[KSendWaypointsOnce[m[K(size_t sending_index);
+      |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:51:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Nav2Client[m[K’ defined here
+   51 | class [01;36m[KNav2Client[m[K : public rclcpp::Node{
+      |       [01;36m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/nav2_send_goal.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2

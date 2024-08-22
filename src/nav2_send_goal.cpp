@@ -45,12 +45,12 @@ Nav2Client::Nav2Client() : rclcpp::Node("nav2_send_goal"), id_(0)
 
 
 
-  ReadWaypointsFromCSV(csv_file_[0], waypoints_);
+  ReadWaypointsFromCSV(csv_file_[0], waypoints_1_);
   start_index_ = (size_t)start_index_int_;
   start_index_ = 1; //自分でつけた
-  if(start_index_ < 1 || start_index_ > waypoints_.size()){
+  if(start_index_ < 1 || start_index_ > waypoints_1_.size()){
     RCLCPP_ERROR(get_logger(), "Invalid start_index");
-    std::cout << "start_index_:" << start_index_ << "waypoints_.size()" << waypoints_.size() << std::endl;
+    std::cout << "start_index_:" << start_index_ << "waypoints_.size()" << waypoints_1_.size() << std::endl;
     return;
   }
 
@@ -143,8 +143,8 @@ void Nav2Client::SendWaypointsTimerCallback(){
   switch (state)
   {
   case SEND_WAYPOINTS1:
-    if(sending_index < waypoints_.size()){
-      sending_index =  SendWaypointsOnce(sending_index);
+    if(sending_index < waypoints_1_.size()){
+      sending_index =  SendWaypointsOnce(sending_index, waypoints_1_);
     }
     if(is_goal_achieved_){//trueになったら
       state = SEND_WAYPOINTS2;
@@ -157,12 +157,12 @@ void Nav2Client::SendWaypointsTimerCallback(){
   case SEND_WAYPOINTS2:
     std::cout << "SEND_WAYPOINYS2" << std::endl;
     if (send_waypoint2_flag == 0){
-      ReadWaypointsFromCSV(csv_file_[1], waypoints_);
+      ReadWaypointsFromCSV(csv_file_[1], waypoints_2_);
     }
     send_waypoint2_flag = 1;
     //sending_index = 0; //いらないかも
-    if(sending_index < waypoints_.size()){
-      sending_index =  SendWaypointsOnce(sending_index);
+    if(sending_index < waypoints_2_.size()){
+      sending_index =  SendWaypointsOnce(sending_index, waypoints_2_);
 //    if(is_goal_achieved_ == True){
  //     state = SEMD_WAYPOINTS2;
   //  }
@@ -178,12 +178,12 @@ void Nav2Client::SendWaypointsTimerCallback(){
   case SEND_WAYPOINTS3:
     std::cout << "SEND_WAYPOINYS3" << std::endl;
     if (send_waypoint3_flag == 0){
-      ReadWaypointsFromCSV(csv_file_[2], waypoints_);
+      ReadWaypointsFromCSV(csv_file_[2], waypoints_3_);
     }
     send_waypoint3_flag = 1;
     //sending_index = 0; //いらないかも
-    if(sending_index < waypoints_.size()){
-      sending_index =  SendWaypointsOnce(sending_index);
+    if(sending_index < waypoints_3_.size()){
+      sending_index =  SendWaypointsOnce(sending_index, waypoints_3_);
 //    if(is_goal_achieved_ == True){
  //     state = SEMD_WAYPOINTS2;
   //  }
@@ -199,12 +199,12 @@ void Nav2Client::SendWaypointsTimerCallback(){
   case SEND_WAYPOINTS4:
     std::cout << "SEND_WAYPOINYS4" << std::endl;
     if (send_waypoint4_flag == 0){
-      ReadWaypointsFromCSV(csv_file_[3], waypoints_);
+      ReadWaypointsFromCSV(csv_file_[3], waypoints_4_);
     }
     send_waypoint4_flag = 1;
     //sending_index = 0; //いらないかも
-    if(sending_index < waypoints_.size()){
-      sending_index =  SendWaypointsOnce(sending_index);
+    if(sending_index < waypoints_4_.size()){
+      sending_index =  SendWaypointsOnce(sending_index, waypoints_4_);
 //    if(is_goal_achieved_ == True){
  //     state = SEMD_WAYPOINTS2;
   //  }
@@ -228,7 +228,7 @@ void Nav2Client::SendWaypointsTimerCallback(){
   }
 }
 
-size_t Nav2Client::SendWaypointsOnce(size_t sending_index){
+size_t Nav2Client::SendWaypointsOnce(size_t sending_index, std::vector<waypoint_info>& waypoints){
   //std::cout << "5" << std::endl;
     std::cout << "sending_index" << sending_index << std::endl;
 
@@ -237,16 +237,16 @@ size_t Nav2Client::SendWaypointsOnce(size_t sending_index){
   size_t next_index;
   nav2_msgs::action::NavigateThroughPoses::Goal nav_through_poses_goal;
   nav2_msgs::action::FollowWaypoints::Goal follow_waypoints_goal;
-  for(i = sending_index; i<waypoints_.size(); i++){
+  for(i = sending_index; i<waypoints.size(); i++){
     //std::cout << "5-1" << std::endl;
 
     geometry_msgs::msg::PoseStamped goal_msg;
     goal_msg.header.stamp = this->now();
     goal_msg.header.frame_id = "map";
-    goal_msg.pose=waypoints_[i].poses;
+    goal_msg.pose=waypoints[i].poses;
     nav_through_poses_goal.poses.push_back(goal_msg);
     follow_waypoints_goal.poses.push_back(goal_msg);
-    if(waypoints_[i].will_stop)break;
+    if(waypoints[i].will_stop)break;
   }
   next_index = i + 1;
   if (follow_type_ == THROUGH_POSES_MODE){

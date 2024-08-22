@@ -1,0 +1,79 @@
+[0.016s] Invoking command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8
+[0.043s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.221s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.224s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.233s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.246s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.262s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.308s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.311s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.450s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.515s] -- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.554s] -- Found nav2_msgs: 1.1.15 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.621s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[0.625s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.630s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.631s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.693s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.763s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.809s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.809s] -- Configured cppcheck include dirs: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include
+[0.809s] -- Configured cppcheck exclude dirs and/or files: 
+[0.814s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.822s] -- Added test 'lint_cmake' to check CMake code style
+[0.827s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.858s] -- Added test 'uncrustify' to check C / C++ code style
+[0.858s] -- Configured uncrustify additional arguments: 
+[0.862s] -- Added test 'xmllint' to check XML markup files
+[0.864s] -- Configuring done
+[0.878s] -- Generating done
+[0.880s] -- Build files have been written to: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal
+[0.907s] [35m[1mConsolidate compiler generated dependencies of target nav2_send_goal[0m
+[0.931s] [ 66%] [32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal_node.cpp.o[0m
+[0.931s] [ 66%] [32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o[0m
+[4.055s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In constructor ‘[01m[KNav2Client::Nav2Client()[m[K’:
+[4.055s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:48:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints_1_[m[K’?
+[4.055s]    48 |   ReadWaypointsFromCSV(csv_file_[0], [01;31m[Kwaypoints_[m[K);
+[4.055s]       |                                      [01;31m[K^~~~~~~~~~[m[K
+[4.055s]       |                                      [32m[Kwaypoints_1_[m[K
+[4.079s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In member function ‘[01m[Kvoid Nav2Client::SendWaypointsTimerCallback()[m[K’:
+[4.079s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:146:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints_1_[m[K’?
+[4.079s]   146 |     if(sending_index < [01;31m[Kwaypoints_[m[K.size()){
+[4.079s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[4.079s]       |                        [32m[Kwaypoints_1_[m[K
+[4.079s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:147:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KNav2Client::SendWaypointsOnce(size_t&, std::vector<waypoint_info>&)[m[K’
+[4.080s]   147 |       sending_index =  [01;31m[KSendWaypointsOnce(sending_index, waypoints_1_)[m[K;
+[4.080s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.080s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[4.080s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t)[m[K’
+[4.080s]    66 |   size_t [01;36m[KSendWaypointsOnce[m[K(size_t sending_index);
+[4.080s]       |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.085s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[4.093s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:164:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints_1_[m[K’?
+[4.093s]   164 |     if(sending_index < [01;31m[Kwaypoints_[m[K.size()){
+[4.094s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[4.094s]       |                        [32m[Kwaypoints_1_[m[K
+[4.101s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:185:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints_1_[m[K’?
+[4.101s]   185 |     if(sending_index < [01;31m[Kwaypoints_[m[K.size()){
+[4.101s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[4.101s]       |                        [32m[Kwaypoints_1_[m[K
+[4.109s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:206:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints_1_[m[K’?
+[4.109s]   206 |     if(sending_index < [01;31m[Kwaypoints_[m[K.size()){
+[4.109s]       |                        [01;31m[K^~~~~~~~~~[m[K
+[4.110s]       |                        [32m[Kwaypoints_1_[m[K
+[4.111s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K At global scope:
+[4.111s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:231:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t, std::vector<waypoint_info>&)[m[K’
+[4.111s]   231 | size_t [01;31m[KNav2Client[m[K::SendWaypointsOnce(size_t sending_index, std::vector<waypoint_info>& waypoints){
+[4.111s]       |        [01;31m[K^~~~~~~~~~[m[K
+[4.111s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[4.112s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t)[m[K’
+[4.112s]    66 |   size_t [01;36m[KSendWaypointsOnce[m[K(size_t sending_index);
+[4.112s]       |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.112s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[4.112s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:51:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Nav2Client[m[K’ defined here
+[4.112s]    51 | class [01;36m[KNav2Client[m[K : public rclcpp::Node{
+[4.112s]       |       [01;36m[K^~~~~~~~~~[m[K
+[5.337s] gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] エラー 1
+[5.337s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/nav2_send_goal.dir/all] エラー 2
+[5.338s] gmake: *** [Makefile:146: all] エラー 2
+[5.340s] Invoked command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8

@@ -1,0 +1,33 @@
+[0.011s] Invoking command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target nav2_send_goal[0m
+[0.076s] [ 33%] [32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o[0m
+[3.032s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In constructor ‘[01m[KNav2Client::Nav2Client()[m[K’:
+[3.032s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:51:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwaypoints_1_[m[K’?
+[3.032s]    51 |   if(start_index_ < 1 || start_index_ > [01;31m[Kwaypoints_[m[K.size()){
+[3.032s]       |                                         [01;31m[K^~~~~~~~~~[m[K
+[3.032s]       |                                         [32m[Kwaypoints_1_[m[K
+[3.047s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In member function ‘[01m[Kvoid Nav2Client::SendWaypointsTimerCallback()[m[K’:
+[3.047s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:147:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KNav2Client::SendWaypointsOnce(size_t&, std::vector<waypoint_info>&)[m[K’
+[3.047s]   147 |       sending_index =  [01;31m[KSendWaypointsOnce(sending_index, waypoints_1_)[m[K;
+[3.047s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.047s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[3.047s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t)[m[K’
+[3.047s]    66 |   size_t [01;36m[KSendWaypointsOnce[m[K(size_t sending_index);
+[3.047s]       |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.047s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[3.049s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K At global scope:
+[3.049s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:231:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t, std::vector<waypoint_info>&)[m[K’
+[3.049s]   231 | size_t [01;31m[KNav2Client[m[K::SendWaypointsOnce(size_t sending_index, std::vector<waypoint_info>& waypoints){
+[3.049s]       |        [01;31m[K^~~~~~~~~~[m[K
+[3.049s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[3.049s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:66:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Ksize_t Nav2Client::SendWaypointsOnce(size_t)[m[K’
+[3.049s]    66 |   size_t [01;36m[KSendWaypointsOnce[m[K(size_t sending_index);
+[3.049s]       |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.049s] In file included from [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:1[m[K:
+[3.049s] [01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp:51:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass Nav2Client[m[K’ defined here
+[3.049s]    51 | class [01;36m[KNav2Client[m[K : public rclcpp::Node{
+[3.050s]       |       [01;36m[K^~~~~~~~~~[m[K
+[4.237s] gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] エラー 1
+[4.237s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/nav2_send_goal.dir/all] エラー 2
+[4.238s] gmake: *** [Makefile:146: all] エラー 2
+[4.240s] Invoked command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8
