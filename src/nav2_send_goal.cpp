@@ -151,6 +151,7 @@ void Nav2Client::SendWaypointsTimerCallback(){
       is_goal_achieved_ = false;
       is_goal_accepted_ = false;
       is_aborted_ = false;
+      sending_index = 0;
     }
     break;
 
@@ -161,6 +162,7 @@ void Nav2Client::SendWaypointsTimerCallback(){
     }
     send_waypoint2_flag = 1;
     //sending_index = 0; //いらないかも
+    
     if(sending_index < waypoints_2_.size()){
       sending_index =  SendWaypointsOnce(sending_index, waypoints_2_);
 //    if(is_goal_achieved_ == True){
@@ -172,6 +174,7 @@ void Nav2Client::SendWaypointsTimerCallback(){
       is_goal_achieved_ = false;
       is_goal_accepted_ = false;
       is_aborted_ = false;
+      sending_index = 0;
     }
     break;
 
@@ -179,15 +182,22 @@ void Nav2Client::SendWaypointsTimerCallback(){
     std::cout << "SEND_WAYPOINYS3" << std::endl;
     if (send_waypoint3_flag == 0){
       ReadWaypointsFromCSV(csv_file_[2], waypoints_3_);
+      std::cout << "check 1" << std::endl;
+
     }
+    std::cout << "check 2" << std::endl;
+
     send_waypoint3_flag = 1;
     //sending_index = 0; //いらないかも
+
     if(sending_index < waypoints_3_.size()){
       sending_index =  SendWaypointsOnce(sending_index, waypoints_3_);
 //    if(is_goal_achieved_ == True){
  //     state = SEMD_WAYPOINTS2;
   //  }
     }
+
+
     if (is_goal_achieved_) {  // waypoint2に到達したら
       state = SEND_WAYPOINTS4;
       is_goal_achieved_ = false;
