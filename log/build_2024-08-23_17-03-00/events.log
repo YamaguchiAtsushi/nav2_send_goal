@@ -1,0 +1,278 @@
+[0.000000] (-) TimerEvent: {}
+[0.000265] (nav2_send_goal) JobQueued: {'identifier': 'nav2_send_goal', 'dependencies': OrderedDict()}
+[0.000349] (nav2_send_goal) JobStarted: {'identifier': 'nav2_send_goal'}
+[0.007789] (nav2_send_goal) JobProgress: {'identifier': 'nav2_send_goal', 'progress': 'cmake'}
+[0.008999] (nav2_send_goal) JobProgress: {'identifier': 'nav2_send_goal', 'progress': 'build'}
+[0.009049] (nav2_send_goal) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal', '--', '-j8', '-l8'], 'cwd': '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamaguchi-a'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/yamaguchi-a'), ('OLDPWD', '/home/yamaguchi-a/turtlebot3_ws/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1374'), ('SYSTEMD_EXEC_PID', '1928'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8055'), ('COLCON_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install:/home/yamaguchi-a/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'yamaguchi-a'), ('JOURNAL_STREAM', '8:32452'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yamaguchi-a'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yamaguchia-ThinkPad-X1-Carbon-7th:@/tmp/.ICE-unix/1618,unix/yamaguchia-ThinkPad-X1-Carbon-7th:/tmp/.ICE-unix/1618'), ('INVOCATION_ID', '1a732dcda8f14fc29c8c8d265926a94b'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:74277fab-7987-4818-a719-ad13ecc305b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal'), ('TURTLEBOT3_MODEL', 'burger'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble')]), 'shell': False}
+[0.035897] (nav2_send_goal) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.099366] (-) TimerEvent: {}
+[0.191042] (nav2_send_goal) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.193636] (nav2_send_goal) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.199493] (-) TimerEvent: {}
+[0.199929] (nav2_send_goal) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.209469] (nav2_send_goal) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.222587] (nav2_send_goal) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.256977] (nav2_send_goal) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.258327] (nav2_send_goal) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299588] (-) TimerEvent: {}
+[0.371200] (nav2_send_goal) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.399727] (-) TimerEvent: {}
+[0.424784] (nav2_send_goal) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.10 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[0.457482] (nav2_send_goal) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.15 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[0.499852] (-) TimerEvent: {}
+[0.516453] (nav2_send_goal) StdoutLine: {'line': b'-- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.520169] (nav2_send_goal) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.522589] (nav2_send_goal) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.523888] (nav2_send_goal) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.580957] (nav2_send_goal) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.599941] (-) TimerEvent: {}
+[0.649716] (nav2_send_goal) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.700046] (-) TimerEvent: {}
+[0.706801] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.707173] (nav2_send_goal) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/include\n'}
+[0.707277] (nav2_send_goal) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.714232] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.725555] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.732708] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.778575] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.778784] (nav2_send_goal) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.784630] (nav2_send_goal) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.785695] (nav2_send_goal) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.800156] (-) TimerEvent: {}
+[0.805226] (nav2_send_goal) StdoutLine: {'line': b'-- Generating done\n'}
+[0.807320] (nav2_send_goal) StdoutLine: {'line': b'-- Build files have been written to: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal\n'}
+[0.835909] (nav2_send_goal) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target publish_point\x1b[0m\n'}
+[0.836169] (nav2_send_goal) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target move_point\x1b[0m\n'}
+[0.836749] (nav2_send_goal) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nav2_send_goal\x1b[0m\n'}
+[0.853549] (nav2_send_goal) StdoutLine: {'line': b'[ 28%] Built target publish_point\n'}
+[0.856400] (nav2_send_goal) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/move_point.dir/src/move_point.cpp.o\x1b[0m\n'}
+[0.862029] (nav2_send_goal) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o\x1b[0m\n'}
+[0.900269] (-) TimerEvent: {}
+[1.000591] (-) TimerEvent: {}
+[1.100905] (-) TimerEvent: {}
+[1.201228] (-) TimerEvent: {}
+[1.301581] (-) TimerEvent: {}
+[1.401858] (-) TimerEvent: {}
+[1.502206] (-) TimerEvent: {}
+[1.602520] (-) TimerEvent: {}
+[1.702887] (-) TimerEvent: {}
+[1.803194] (-) TimerEvent: {}
+[1.903504] (-) TimerEvent: {}
+[2.003774] (-) TimerEvent: {}
+[2.104101] (-) TimerEvent: {}
+[2.204391] (-) TimerEvent: {}
+[2.304697] (-) TimerEvent: {}
+[2.405001] (-) TimerEvent: {}
+[2.505304] (-) TimerEvent: {}
+[2.605574] (-) TimerEvent: {}
+[2.705879] (-) TimerEvent: {}
+[2.806195] (-) TimerEvent: {}
+[2.906501] (-) TimerEvent: {}
+[3.006822] (-) TimerEvent: {}
+[3.107137] (-) TimerEvent: {}
+[3.207453] (-) TimerEvent: {}
+[3.307753] (-) TimerEvent: {}
+[3.408089] (-) TimerEvent: {}
+[3.508381] (-) TimerEvent: {}
+[3.608972] (-) TimerEvent: {}
+[3.709268] (-) TimerEvent: {}
+[3.809591] (-) TimerEvent: {}
+[3.910000] (-) TimerEvent: {}
+[4.010434] (-) TimerEvent: {}
+[4.110934] (-) TimerEvent: {}
+[4.211354] (-) TimerEvent: {}
+[4.311727] (-) TimerEvent: {}
+[4.412154] (-) TimerEvent: {}
+[4.512486] (-) TimerEvent: {}
+[4.612859] (-) TimerEvent: {}
+[4.713223] (-) TimerEvent: {}
+[4.813641] (-) TimerEvent: {}
+[4.914299] (-) TimerEvent: {}
+[5.014628] (-) TimerEvent: {}
+[5.114965] (-) TimerEvent: {}
+[5.215350] (-) TimerEvent: {}
+[5.315726] (-) TimerEvent: {}
+[5.416028] (-) TimerEvent: {}
+[5.516377] (-) TimerEvent: {}
+[5.616743] (-) TimerEvent: {}
+[5.717078] (-) TimerEvent: {}
+[5.817434] (-) TimerEvent: {}
+[5.917781] (-) TimerEvent: {}
+[6.018090] (-) TimerEvent: {}
+[6.118434] (-) TimerEvent: {}
+[6.218781] (-) TimerEvent: {}
+[6.319122] (-) TimerEvent: {}
+[6.419457] (-) TimerEvent: {}
+[6.519808] (-) TimerEvent: {}
+[6.620122] (-) TimerEvent: {}
+[6.720461] (-) TimerEvent: {}
+[6.820814] (-) TimerEvent: {}
+[6.921161] (-) TimerEvent: {}
+[7.021517] (-) TimerEvent: {}
+[7.121869] (-) TimerEvent: {}
+[7.222218] (-) TimerEvent: {}
+[7.322576] (-) TimerEvent: {}
+[7.422933] (-) TimerEvent: {}
+[7.523301] (-) TimerEvent: {}
+[7.623663] (-) TimerEvent: {}
+[7.724025] (-) TimerEvent: {}
+[7.824395] (-) TimerEvent: {}
+[7.924772] (-) TimerEvent: {}
+[8.025152] (-) TimerEvent: {}
+[8.125541] (-) TimerEvent: {}
+[8.225940] (-) TimerEvent: {}
+[8.326384] (-) TimerEvent: {}
+[8.426805] (-) TimerEvent: {}
+[8.527253] (-) TimerEvent: {}
+[8.627751] (-) TimerEvent: {}
+[8.728244] (-) TimerEvent: {}
+[8.828676] (-) TimerEvent: {}
+[8.929104] (-) TimerEvent: {}
+[9.029480] (-) TimerEvent: {}
+[9.129868] (-) TimerEvent: {}
+[9.230191] (-) TimerEvent: {}
+[9.330539] (-) TimerEvent: {}
+[9.430852] (-) TimerEvent: {}
+[9.531185] (-) TimerEvent: {}
+[9.631474] (-) TimerEvent: {}
+[9.731775] (-) TimerEvent: {}
+[9.832107] (-) TimerEvent: {}
+[9.932414] (-) TimerEvent: {}
+[10.032711] (-) TimerEvent: {}
+[10.133050] (-) TimerEvent: {}
+[10.233365] (-) TimerEvent: {}
+[10.333683] (-) TimerEvent: {}
+[10.433978] (-) TimerEvent: {}
+[10.534302] (-) TimerEvent: {}
+[10.634632] (-) TimerEvent: {}
+[10.734940] (-) TimerEvent: {}
+[10.835226] (-) TimerEvent: {}
+[10.935540] (-) TimerEvent: {}
+[11.035819] (-) TimerEvent: {}
+[11.136148] (-) TimerEvent: {}
+[11.236460] (-) TimerEvent: {}
+[11.336780] (-) TimerEvent: {}
+[11.437097] (-) TimerEvent: {}
+[11.537418] (-) TimerEvent: {}
+[11.637732] (-) TimerEvent: {}
+[11.738058] (-) TimerEvent: {}
+[11.838335] (-) TimerEvent: {}
+[11.938657] (-) TimerEvent: {}
+[12.038978] (-) TimerEvent: {}
+[12.139289] (-) TimerEvent: {}
+[12.239608] (-) TimerEvent: {}
+[12.339920] (-) TimerEvent: {}
+[12.440218] (-) TimerEvent: {}
+[12.540520] (-) TimerEvent: {}
+[12.640828] (-) TimerEvent: {}
+[12.741128] (-) TimerEvent: {}
+[12.841444] (-) TimerEvent: {}
+[12.941745] (-) TimerEvent: {}
+[13.042065] (-) TimerEvent: {}
+[13.142393] (-) TimerEvent: {}
+[13.242709] (-) TimerEvent: {}
+[13.343031] (-) TimerEvent: {}
+[13.443467] (-) TimerEvent: {}
+[13.543880] (-) TimerEvent: {}
+[13.644395] (-) TimerEvent: {}
+[13.744840] (-) TimerEvent: {}
+[13.845270] (-) TimerEvent: {}
+[13.945720] (-) TimerEvent: {}
+[14.046130] (-) TimerEvent: {}
+[14.146447] (-) TimerEvent: {}
+[14.246784] (-) TimerEvent: {}
+[14.347131] (-) TimerEvent: {}
+[14.447467] (-) TimerEvent: {}
+[14.547801] (-) TimerEvent: {}
+[14.648143] (-) TimerEvent: {}
+[14.748449] (-) TimerEvent: {}
+[14.848762] (-) TimerEvent: {}
+[14.949080] (-) TimerEvent: {}
+[15.049395] (-) TimerEvent: {}
+[15.149705] (-) TimerEvent: {}
+[15.250023] (-) TimerEvent: {}
+[15.350308] (-) TimerEvent: {}
+[15.450620] (-) TimerEvent: {}
+[15.550950] (-) TimerEvent: {}
+[15.651285] (-) TimerEvent: {}
+[15.674785] (nav2_send_goal) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable move_point\x1b[0m\n'}
+[15.751391] (-) TimerEvent: {}
+[15.851732] (-) TimerEvent: {}
+[15.952097] (-) TimerEvent: {}
+[16.052438] (-) TimerEvent: {}
+[16.152768] (-) TimerEvent: {}
+[16.253095] (-) TimerEvent: {}
+[16.353406] (-) TimerEvent: {}
+[16.453726] (-) TimerEvent: {}
+[16.554131] (-) TimerEvent: {}
+[16.582788] (nav2_send_goal) StdoutLine: {'line': b'[ 71%] Built target move_point\n'}
+[16.654267] (-) TimerEvent: {}
+[16.754601] (-) TimerEvent: {}
+[16.854936] (-) TimerEvent: {}
+[16.955275] (-) TimerEvent: {}
+[17.055606] (-) TimerEvent: {}
+[17.155935] (-) TimerEvent: {}
+[17.256248] (-) TimerEvent: {}
+[17.356533] (-) TimerEvent: {}
+[17.456844] (-) TimerEvent: {}
+[17.557147] (-) TimerEvent: {}
+[17.657446] (-) TimerEvent: {}
+[17.757759] (-) TimerEvent: {}
+[17.858063] (-) TimerEvent: {}
+[17.958357] (-) TimerEvent: {}
+[18.058658] (-) TimerEvent: {}
+[18.158975] (-) TimerEvent: {}
+[18.259311] (-) TimerEvent: {}
+[18.359641] (-) TimerEvent: {}
+[18.460016] (-) TimerEvent: {}
+[18.560511] (-) TimerEvent: {}
+[18.660949] (-) TimerEvent: {}
+[18.761391] (-) TimerEvent: {}
+[18.807019] (nav2_send_goal) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable nav2_send_goal\x1b[0m\n'}
+[18.861540] (-) TimerEvent: {}
+[18.962022] (-) TimerEvent: {}
+[19.062445] (-) TimerEvent: {}
+[19.162951] (-) TimerEvent: {}
+[19.263391] (-) TimerEvent: {}
+[19.363696] (-) TimerEvent: {}
+[19.463983] (-) TimerEvent: {}
+[19.564283] (-) TimerEvent: {}
+[19.660388] (nav2_send_goal) StdoutLine: {'line': b'[100%] Built target nav2_send_goal\n'}
+[19.664394] (-) TimerEvent: {}
+[19.672182] (nav2_send_goal) CommandEnded: {'returncode': 0}
+[19.706143] (nav2_send_goal) JobProgress: {'identifier': 'nav2_send_goal', 'progress': 'install'}
+[19.716804] (nav2_send_goal) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal'], 'cwd': '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yamaguchi-a'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/yamaguchi-a'), ('OLDPWD', '/home/yamaguchi-a/turtlebot3_ws/src'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1374'), ('SYSTEMD_EXEC_PID', '1928'), ('UNZIP', '-O CP932'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8055'), ('COLCON_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install:/home/yamaguchi-a/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'yamaguchi-a'), ('JOURNAL_STREAM', '8:32452'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yamaguchi-a'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yamaguchia-ThinkPad-X1-Carbon-7th:@/tmp/.ICE-unix/1618,unix/yamaguchia-ThinkPad-X1-Carbon-7th:/tmp/.ICE-unix/1618'), ('INVOCATION_ID', '1a732dcda8f14fc29c8c8d265926a94b'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'ja_JP.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:74277fab-7987-4818-a719-ad13ecc305b5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal'), ('TURTLEBOT3_MODEL', 'burger'), ('ZIPINFO', '-O CP932'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_simulations:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_gazebo:/home/yamaguchi-a/turtlebot3_ws/install/turtlebot3_fake_node:/home/yamaguchi-a/turtlebot3_ws/install/nav2_send_goal:/opt/ros/humble')]), 'shell': False}
+[19.725150] (nav2_send_goal) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.725419] (nav2_send_goal) StdoutLine: {'line': b'-- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/nav2_send_goal\n'}
+[19.733374] (nav2_send_goal) StdoutLine: {'line': b'-- Set runtime path of "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/nav2_send_goal" to ""\n'}
+[19.733654] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/publish_point\n'}
+[19.733826] (nav2_send_goal) StdoutLine: {'line': b'-- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/move_point\n'}
+[19.739542] (nav2_send_goal) StdoutLine: {'line': b'-- Set runtime path of "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/move_point" to ""\n'}
+[19.739814] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/include\n'}
+[19.739982] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/include/nav2_send_goal\n'}
+[19.740119] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp\n'}
+[19.740278] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/nav2_send_goal\n'}
+[19.740398] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/publish_point\n'}
+[19.740549] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/move_point\n'}
+[19.740738] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/launch\n'}
+[19.740911] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/launch/start.launch.xml\n'}
+[19.741032] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/ament_index/resource_index/package_run_dependencies/nav2_send_goal\n'}
+[19.741193] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/ament_index/resource_index/parent_prefix_path/nav2_send_goal\n'}
+[19.741361] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/ament_prefix_path.sh\n'}
+[19.741485] (nav2_send_goal) StdoutLine: {'line': b'-- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/ament_prefix_path.dsv\n'}
+[19.741608] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/path.sh\n'}
+[19.741787] (nav2_send_goal) StdoutLine: {'line': b'-- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/path.dsv\n'}
+[19.741982] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.bash\n'}
+[19.742102] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.sh\n'}
+[19.742219] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.zsh\n'}
+[19.742336] (nav2_send_goal) StdoutLine: {'line': b'-- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.dsv\n'}
+[19.742454] (nav2_send_goal) StdoutLine: {'line': b'-- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/package.dsv\n'}
+[19.742571] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/ament_index/resource_index/packages/nav2_send_goal\n'}
+[19.742690] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[19.742810] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/cmake/nav2_send_goalConfig.cmake\n'}
+[19.742928] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/cmake/nav2_send_goalConfig-version.cmake\n'}
+[19.743048] (nav2_send_goal) StdoutLine: {'line': b'-- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/package.xml\n'}
+[19.743976] (nav2_send_goal) CommandEnded: {'returncode': 0}
+[19.764508] (-) TimerEvent: {}
+[19.803965] (nav2_send_goal) JobEnded: {'identifier': 'nav2_send_goal', 'rc': 0}
+[19.804787] (-) EventReactorShutdown: {}

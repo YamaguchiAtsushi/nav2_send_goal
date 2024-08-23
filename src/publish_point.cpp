@@ -21,7 +21,7 @@ private:
 
         // 座標と姿勢を設定
         message.pose.position.x = 3.0;
-        message.pose.position.y = -0.5;
+        message.pose.position.y = -0.3;
         message.pose.position.z = 0.0;
 
         message.pose.orientation.x = 0.0;

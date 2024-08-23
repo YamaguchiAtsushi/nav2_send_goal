@@ -43,7 +43,7 @@ private:
         auto twist_msg = geometry_msgs::msg::Twist();
 
         // 距離が十分に小さい場合、停止
-        if (distance < 0.1)
+        if (distance < 0.2)
         {
             twist_msg.linear.x = 0.0;
             twist_msg.angular.z = 0.0;
@@ -52,7 +52,7 @@ private:
         {
             // 前進速度と回転速度を設定
             twist_msg.linear.x = 0.05 * distance;
-            twist_msg.angular.z = 2.0 * (target_angle - current_yaw_);
+            twist_msg.angular.z = 0.02 * (target_angle - current_yaw_);
         }
 
         velocity_publisher_->publish(twist_msg);

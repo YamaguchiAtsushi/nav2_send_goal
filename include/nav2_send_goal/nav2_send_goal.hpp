@@ -78,7 +78,7 @@ private:
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
 
   geometry_msgs::msg::Pose current_pose_;
-  geometry_msgs::msg::Twist twist_msg;
+  //geometry_msgs::msg::Twist twist_msg;
   
 
 

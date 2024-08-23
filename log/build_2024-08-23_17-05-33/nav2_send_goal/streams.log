@@ -1,0 +1,39 @@
+[0.012s] Invoking command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target nav2_send_goal[0m
+[0.067s] [ 28%] Built target publish_point
+[0.069s] [ 57%] Built target move_point
+[0.081s] [ 71%] [32mBuilding CXX object CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o[0m
+[15.178s] [ 85%] [32m[1mLinking CXX executable nav2_send_goal[0m
+[16.012s] [100%] Built target nav2_send_goal
+[16.022s] Invoked command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal -- -j8 -l8
+[16.061s] Invoking command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal
+[16.068s] -- Install configuration: ""
+[16.068s] -- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/nav2_send_goal
+[16.075s] -- Set runtime path of "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/nav2_send_goal" to ""
+[16.075s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/publish_point
+[16.075s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/move_point
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/include
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/include/nav2_send_goal
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/include/nav2_send_goal/nav2_send_goal.hpp
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/nav2_send_goal
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/publish_point
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/lib/nav2_send_goal/move_point
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/launch
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/launch/start.launch.xml
+[16.076s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/ament_index/resource_index/package_run_dependencies/nav2_send_goal
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/ament_index/resource_index/parent_prefix_path/nav2_send_goal
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/ament_prefix_path.sh
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/ament_prefix_path.dsv
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/path.sh
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/environment/path.dsv
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.bash
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.sh
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.zsh
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/local_setup.dsv
+[16.077s] -- Installing: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/package.dsv
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/ament_index/resource_index/packages/nav2_send_goal
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/cmake/nav2_send_goalConfig.cmake
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/cmake/nav2_send_goalConfig-version.cmake
+[16.077s] -- Up-to-date: /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/install/nav2_send_goal/share/nav2_send_goal/package.xml
+[16.079s] Invoked command in '/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal
