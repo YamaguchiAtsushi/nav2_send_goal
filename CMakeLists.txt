@@ -14,6 +14,7 @@ endif()
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(nav2_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 
@@ -29,15 +30,28 @@ include_directories(
 #add_executable(nav2_send_goal src/nav2_send_goal.cpp)
 
 ament_auto_add_executable(nav2_send_goal src/nav2_send_goal.cpp src/nav2_send_goal_node.cpp)
-ament_target_dependencies(nav2_send_goal rclcpp rclcpp_action nav2_msgs tf2 tf2_geometry_msgs)
+ament_target_dependencies(nav2_send_goal rclcpp rclcpp_action nav2_msgs nav_msgs tf2 tf2_geometry_msgs)
 
+ament_auto_add_executable(publish_point src/publish_point.cpp)
+ament_target_dependencies(publish_point rclcpp tf2_geometry_msgs)
+
+ament_auto_add_executable(move_point src/move_point.cpp)
+ament_target_dependencies(move_point rclcpp nav_msgs tf2 tf2_geometry_msgs)
 
 install(TARGETS
   nav2_send_goal
   DESTINATION lib/${PROJECT_NAME}/
 )
 
+install(TARGETS
+  publish_point
+  DESTINATION lib/${PROJECT_NAME}/
+)
 
+install(TARGETS
+  move_point
+  DESTINATION lib/${PROJECT_NAME}/
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

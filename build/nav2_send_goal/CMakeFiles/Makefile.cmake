@@ -921,4 +921,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/nav2_send_goal_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/nav2_send_goal.dir/DependInfo.cmake"
+  "CMakeFiles/publish_point.dir/DependInfo.cmake"
+  "CMakeFiles/move_point.dir/DependInfo.cmake"
   )

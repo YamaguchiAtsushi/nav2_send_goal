@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2
 
 # The main recursive "all" target.
 all: CMakeFiles/nav2_send_goal.dir/all
+all: CMakeFiles/publish_point.dir/all
+all: CMakeFiles/move_point.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +76,8 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/nav2_send_goal_uninstall.dir/clean
 clean: CMakeFiles/nav2_send_goal.dir/clean
+clean: CMakeFiles/publish_point.dir/clean
+clean: CMakeFiles/move_point.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -135,7 +139,7 @@ CMakeFiles/nav2_send_goal_uninstall.dir/clean:
 CMakeFiles/nav2_send_goal.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles --progress-num=1,2,3 "Built target nav2_send_goal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles --progress-num=3,4,5 "Built target nav2_send_goal"
 .PHONY : CMakeFiles/nav2_send_goal.dir/all
 
 # Build rule for subdir invocation for target.
@@ -153,6 +157,58 @@ nav2_send_goal: CMakeFiles/nav2_send_goal.dir/rule
 CMakeFiles/nav2_send_goal.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/clean
 .PHONY : CMakeFiles/nav2_send_goal.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/publish_point.dir
+
+# All Build rule for target.
+CMakeFiles/publish_point.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_point.dir/build.make CMakeFiles/publish_point.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_point.dir/build.make CMakeFiles/publish_point.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles --progress-num=6,7 "Built target publish_point"
+.PHONY : CMakeFiles/publish_point.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/publish_point.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/publish_point.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles 0
+.PHONY : CMakeFiles/publish_point.dir/rule
+
+# Convenience name for target.
+publish_point: CMakeFiles/publish_point.dir/rule
+.PHONY : publish_point
+
+# clean rule for target.
+CMakeFiles/publish_point.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_point.dir/build.make CMakeFiles/publish_point.dir/clean
+.PHONY : CMakeFiles/publish_point.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/move_point.dir
+
+# All Build rule for target.
+CMakeFiles/move_point.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles --progress-num=1,2 "Built target move_point"
+.PHONY : CMakeFiles/move_point.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/move_point.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/move_point.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles 0
+.PHONY : CMakeFiles/move_point.dir/rule
+
+# Convenience name for target.
+move_point: CMakeFiles/move_point.dir/rule
+.PHONY : move_point
+
+# clean rule for target.
+CMakeFiles/move_point.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/clean
+.PHONY : CMakeFiles/move_point.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

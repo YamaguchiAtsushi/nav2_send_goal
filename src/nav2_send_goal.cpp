@@ -10,6 +10,10 @@ Nav2Client::Nav2Client() : rclcpp::Node("nav2_send_goal"), id_(0)
   rclcpp::QoS latched_qos{ 1 };
   latched_qos.transient_local();
   twist_pub_ = create_publisher<geometry_msgs::msg::Twist>("twist", latched_qos);
+  pose_sub_ = create_subscription<geometry_msgs::msg::PoseStamped>("pose", 1, std::bind(&Nav2Client::PoseCallback, this, std::placeholders::_1));
+  odom_sub_ = create_subscription<nav_msgs::msg::Odometry>("odom", 10, std::bind(&Nav2Client::OdomCallback, this, std::placeholders::_1));
+
+
   std::string action_server_name;
 
   if (follow_type_ == THROUGH_POSES_MODE){
@@ -123,6 +127,8 @@ void Nav2Client::SendWaypointsTimerCallback(){
   static size_t sending_index = start_index_ - 1;
   //static int state = SEND_WAYPOINTS;
   static int state = SEND_WAYPOINTS1;
+  //static int state = APPROACH_POINT;
+
 
 
   /*
@@ -135,7 +141,7 @@ void Nav2Client::SendWaypointsTimerCallback(){
     std::cout << "rotation" << std::endl;
   }
   */
-
+  //auto twist_msg = geometry_msgs::msg::Twist();
 
 
   std::cout << "sending_index" << sending_index << std::endl;
@@ -143,10 +149,27 @@ void Nav2Client::SendWaypointsTimerCallback(){
   switch (state)
   {
   case SEND_WAYPOINTS1:
+    std::cout << "SEND_WAYPOINYS1" << std::endl;
+    std::cout << "is_goal_achieced" << is_goal_achieved_ << std::endl; 
+
+    //if(find_point_ == 1){
+    //  is_goal_achieved_ = false;
+    //  is_goal_accepted_ = false;
+    //  is_aborted_ = false;
+    //  state = APPROACH_POINT;
+    //  std::cout << "APPROACH_POINT start" << std::endl;
+    //}
     if(sending_index < waypoints_.size()){
       sending_index =  SendWaypointsOnce(sending_index);
     }
     if(is_goal_achieved_){//trueになったら
+        if(find_point_ == 1){
+          is_goal_achieved_ = false;
+          is_goal_accepted_ = false;
+          is_aborted_ = false;
+          state = APPROACH_POINT;
+          std::cout << "APPROACH_POINT start" << std::endl;
+    }
       state = SEND_WAYPOINTS2;
       is_goal_achieved_ = false;
       is_goal_accepted_ = false;
@@ -216,10 +239,31 @@ void Nav2Client::SendWaypointsTimerCallback(){
       is_aborted_ = false;
     }
     break;
+
   case FINISH_SENDING:
     RCLCPP_INFO(this->get_logger(), "Waypoint sending is Finisihed.");
     timer_->cancel();
-  break;
+    break;
+
+  case APPROACH_POINT:
+    //twist_pub_->publish(twist_msg);
+    std::cout << "APPROACH_POINT running" << std::endl;
+
+    waypoints_[0].poses.position.x = goal_x;
+    waypoints_[0].poses.position.y = goal_y;
+    waypoints_[0].poses.position.z = 0.0;
+    waypoints_[0].poses.orientation = rpyYawToQuat(std::stod("0.0")/180.0*M_PI);
+    waypoints_[0].will_stop = (std::string("1") == std::string("0.0"));
+
+    //waypoints_[0].poses.orientation = rpyYawToQuat(std::stod(strvec.at(2))/180.0*M_PI);
+    //waypoints_[0].will_stop = ("1"==strvec.at(5));
+
+    sending_index = SendWaypointsOnce(sending_index);
+    if(goal_point_ == 1){
+      state = SEND_WAYPOINTS2;
+    }
+    break;
+    
 
   default:
     RCLCPP_INFO(this->get_logger(), "UNKNOWN ERROR");
@@ -333,3 +377,58 @@ void Nav2Client::NavThroughPosesFeedbackCallback(const GoalHandleNavigateNavigat
   //RCLCPP_INFO(get_logger(), "number of poses remaining = %zu", (size_t)feedback->number_of_poses_remaining);
 }
 
+void Nav2Client::PoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg){
+
+  //geometry_msgs::msg::Pose current_pose_;
+  find_point_ = 1;
+
+  // 目標座標を取得
+  //double goal_x = msg->pose.position.x;
+  //double goal_y = msg->pose.position.y;
+
+  goal_x = msg->pose.position.x;
+  goal_y = msg->pose.position.y;
+
+  // 現在位置との距離と角度を計算
+  double delta_x = goal_x - current_pose_.position.x;
+  double delta_y = goal_y - current_pose_.position.y;
+  //double distance = 100;
+  //distance = std::sqrt(delta_x * delta_x + delta_y * delta_y);
+  double distance = std::sqrt(delta_x * delta_x + delta_y * delta_y);
+
+  double target_angle = std::atan2(delta_y, delta_x);
+
+  // 目標座標に向かうためのTwistメッセージを作成
+  //auto twist_msg = geometry_msgs::msg::Twist();
+
+  // 距離が十分に小さい場合、停止
+  if (distance < 0.1)
+  {
+      twist_msg.linear.x = 0.0;
+      twist_msg.angular.z = 0.0;
+      goal_point_ = 1;
+  }
+  else
+  {
+      // 前進速度と回転速度を設定
+      twist_msg.linear.x = 0.5 * distance;
+      twist_msg.angular.z = 2.0 * (target_angle - current_yaw_);
+      std::cout << "twist_msg" << std::endl;
+  }
+
+  //twist_pub_->publish(twist_msg);
+}
+
+void Nav2Client::OdomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
+{
+  //geometry_msgs::msg::Pose current_pose_;
+  current_pose_ = msg->pose.pose;
+  tf2::Quaternion q(
+      current_pose_.orientation.x,
+      current_pose_.orientation.y,
+      current_pose_.orientation.z,
+      current_pose_.orientation.w);
+  tf2::Matrix3x3 m(q);
+  double roll, pitch;
+  m.getRPY(roll, pitch, current_yaw_);
+}

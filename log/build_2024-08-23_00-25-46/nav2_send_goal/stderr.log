@@ -1,0 +1,7 @@
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:[m[K In member function ‘[01m[Kvoid Nav2Client::SendWaypointsTimerCallback()[m[K’:
+[01m[K/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/src/nav2_send_goal.cpp:226:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kaaa[m[K’ was not declared in this scope
+  226 |     [01;31m[Kaaa[m[K
+      |     [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/nav2_send_goal.dir/build.make:76: CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal.cpp.o] エラー 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/nav2_send_goal.dir/all] エラー 2
+gmake: *** [Makefile:146: all] エラー 2

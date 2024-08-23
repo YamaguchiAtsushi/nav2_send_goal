@@ -14,12 +14,16 @@
 #include "nav2_msgs/action/navigate_through_poses.hpp"
 #include "nav2_msgs/action/follow_waypoints.hpp"
 #include "nav2_msgs/action/navigate_to_pose.hpp"
+#include "nav_msgs/msg/odometry.hpp"
 
+#include "geometry_msgs/msg/pose_stamped.hpp"
 #include "geometry_msgs/msg/twist.hpp"
+
 
 #include <tf2/utils.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <tf2/transform_datatypes.h>
+#include "tf2/LinearMath/Quaternion.h"
 
 #define FOLLOW_WAYPOINTS_MODE 1
 #define THROUGH_POSES_MODE 0
@@ -34,6 +38,7 @@
 #define SEND_WAYPOINTS2 7
 #define SEND_WAYPOINTS3 8
 #define SEND_WAYPOINTS4 9
+#define APPROACH_POINT 10
 
 
 
@@ -63,10 +68,20 @@ private:
   void NavThroughPosesGoalResponseCallback(std::shared_ptr<rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateThroughPoses>> future);
   void NavThroughPosesFeedbackCallback(const GoalHandleNavigateNavigateThroughPoses::SharedPtr,const std::shared_ptr<const NavigateThroughPoses::Feedback> feedback);
   void SendWaypointsTimerCallback();
+  void PoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg);
+  void OdomCallback(const nav_msgs::msg::Odometry::SharedPtr msg);
   size_t SendWaypointsOnce(size_t sending_index);
 
 private:
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr twist_pub_;
+  rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr pose_sub_;
+  rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+
+  geometry_msgs::msg::Pose current_pose_;
+  geometry_msgs::msg::Twist twist_msg;
+  
+
+
   rclcpp::TimerBase::SharedPtr timer_;
   int id_;
   //std::string csv_file_;
@@ -85,6 +100,10 @@ private:
   std::vector<waypoint_info> waypoints_;
   size_t start_index_;
 
+  int find_point_;//初期化してない
+  int goal_point_;//初期化してない
+
+
   int follow_type_;
   int start_index_int_;
   bool is_action_server_ready_;
@@ -97,6 +116,10 @@ private:
   int send_waypoint3_flag;
   int send_waypoint4_flag;
 
+  double current_yaw_;
+
+  double goal_x;
+  double goal_y;
 
   int16_t number_of_poses_remaining_;
 };

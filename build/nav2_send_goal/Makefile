@@ -210,6 +210,56 @@ nav2_send_goal/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/build
 .PHONY : nav2_send_goal/fast
 
+#=============================================================================
+# Target rules for targets named publish_point
+
+# Build rule for target.
+publish_point: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publish_point
+.PHONY : publish_point
+
+# fast build rule for target.
+publish_point/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_point.dir/build.make CMakeFiles/publish_point.dir/build
+.PHONY : publish_point/fast
+
+#=============================================================================
+# Target rules for targets named move_point
+
+# Build rule for target.
+move_point: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_point
+.PHONY : move_point
+
+# fast build rule for target.
+move_point/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/build
+.PHONY : move_point/fast
+
+src/move_point.o: src/move_point.cpp.o
+.PHONY : src/move_point.o
+
+# target to build an object file
+src/move_point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/src/move_point.cpp.o
+.PHONY : src/move_point.cpp.o
+
+src/move_point.i: src/move_point.cpp.i
+.PHONY : src/move_point.i
+
+# target to preprocess a source file
+src/move_point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/src/move_point.cpp.i
+.PHONY : src/move_point.cpp.i
+
+src/move_point.s: src/move_point.cpp.s
+.PHONY : src/move_point.s
+
+# target to generate assembly for a file
+src/move_point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/src/move_point.cpp.s
+.PHONY : src/move_point.cpp.s
+
 src/nav2_send_goal.o: src/nav2_send_goal.cpp.o
 .PHONY : src/nav2_send_goal.o
 
@@ -258,6 +308,30 @@ src/nav2_send_goal_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal_node.cpp.s
 .PHONY : src/nav2_send_goal_node.cpp.s
 
+src/publish_point.o: src/publish_point.cpp.o
+.PHONY : src/publish_point.o
+
+# target to build an object file
+src/publish_point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_point.dir/build.make CMakeFiles/publish_point.dir/src/publish_point.cpp.o
+.PHONY : src/publish_point.cpp.o
+
+src/publish_point.i: src/publish_point.cpp.i
+.PHONY : src/publish_point.i
+
+# target to preprocess a source file
+src/publish_point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_point.dir/build.make CMakeFiles/publish_point.dir/src/publish_point.cpp.i
+.PHONY : src/publish_point.cpp.i
+
+src/publish_point.s: src/publish_point.cpp.s
+.PHONY : src/publish_point.s
+
+# target to generate assembly for a file
+src/publish_point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_point.dir/build.make CMakeFiles/publish_point.dir/src/publish_point.cpp.s
+.PHONY : src/publish_point.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -273,13 +347,21 @@ help:
 	@echo "... test"
 	@echo "... nav2_send_goal_uninstall"
 	@echo "... uninstall"
+	@echo "... move_point"
 	@echo "... nav2_send_goal"
+	@echo "... publish_point"
+	@echo "... src/move_point.o"
+	@echo "... src/move_point.i"
+	@echo "... src/move_point.s"
 	@echo "... src/nav2_send_goal.o"
 	@echo "... src/nav2_send_goal.i"
 	@echo "... src/nav2_send_goal.s"
 	@echo "... src/nav2_send_goal_node.o"
 	@echo "... src/nav2_send_goal_node.i"
 	@echo "... src/nav2_send_goal_node.s"
+	@echo "... src/publish_point.o"
+	@echo "... src/publish_point.i"
+	@echo "... src/publish_point.s"
 .PHONY : help
 
 
