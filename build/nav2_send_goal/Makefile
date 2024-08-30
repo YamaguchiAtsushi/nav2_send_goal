@@ -236,6 +236,19 @@ move_point/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_point.dir/build.make CMakeFiles/move_point.dir/build
 .PHONY : move_point/fast
 
+#=============================================================================
+# Target rules for targets named publish_area
+
+# Build rule for target.
+publish_area: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publish_area
+.PHONY : publish_area
+
+# fast build rule for target.
+publish_area/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_area.dir/build.make CMakeFiles/publish_area.dir/build
+.PHONY : publish_area/fast
+
 src/move_point.o: src/move_point.cpp.o
 .PHONY : src/move_point.o
 
@@ -308,6 +321,30 @@ src/nav2_send_goal_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nav2_send_goal.dir/build.make CMakeFiles/nav2_send_goal.dir/src/nav2_send_goal_node.cpp.s
 .PHONY : src/nav2_send_goal_node.cpp.s
 
+src/publish_area.o: src/publish_area.cpp.o
+.PHONY : src/publish_area.o
+
+# target to build an object file
+src/publish_area.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_area.dir/build.make CMakeFiles/publish_area.dir/src/publish_area.cpp.o
+.PHONY : src/publish_area.cpp.o
+
+src/publish_area.i: src/publish_area.cpp.i
+.PHONY : src/publish_area.i
+
+# target to preprocess a source file
+src/publish_area.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_area.dir/build.make CMakeFiles/publish_area.dir/src/publish_area.cpp.i
+.PHONY : src/publish_area.cpp.i
+
+src/publish_area.s: src/publish_area.cpp.s
+.PHONY : src/publish_area.s
+
+# target to generate assembly for a file
+src/publish_area.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publish_area.dir/build.make CMakeFiles/publish_area.dir/src/publish_area.cpp.s
+.PHONY : src/publish_area.cpp.s
+
 src/publish_point.o: src/publish_point.cpp.o
 .PHONY : src/publish_point.o
 
@@ -349,6 +386,7 @@ help:
 	@echo "... uninstall"
 	@echo "... move_point"
 	@echo "... nav2_send_goal"
+	@echo "... publish_area"
 	@echo "... publish_point"
 	@echo "... src/move_point.o"
 	@echo "... src/move_point.i"
@@ -359,6 +397,9 @@ help:
 	@echo "... src/nav2_send_goal_node.o"
 	@echo "... src/nav2_send_goal_node.i"
 	@echo "... src/nav2_send_goal_node.s"
+	@echo "... src/publish_area.o"
+	@echo "... src/publish_area.i"
+	@echo "... src/publish_area.s"
 	@echo "... src/publish_point.o"
 	@echo "... src/publish_point.i"
 	@echo "... src/publish_point.s"

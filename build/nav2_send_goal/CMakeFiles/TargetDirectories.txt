@@ -3,6 +3,7 @@
 /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles/nav2_send_goal.dir
 /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles/publish_point.dir
 /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles/move_point.dir
+/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles/publish_area.dir
 /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles/test.dir
 /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles/edit_cache.dir
 /home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/build/nav2_send_goal/CMakeFiles/rebuild_cache.dir
