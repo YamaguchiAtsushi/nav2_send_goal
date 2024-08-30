@@ -50,6 +50,9 @@ ament_target_dependencies(publish_area_b rclcpp std_msgs)
 ament_auto_add_executable(publish_area_c src/publish_area_c.cpp)
 ament_target_dependencies(publish_area_c rclcpp std_msgs)
 
+ament_auto_add_executable(timer src/timer.cpp)
+ament_target_dependencies(timer rclcpp)
+
 install(TARGETS
   nav2_send_goal
   DESTINATION lib/${PROJECT_NAME}/
@@ -80,6 +83,11 @@ install(TARGETS
   install(TARGETS
   publish_area_c
   DESTINATION lib/${PROJECT_NAME})
+
+install(TARGETS
+  timer
+  DESTINATION lib/${PROJECT_NAME}/
+)
 
 
 if(BUILD_TESTING)

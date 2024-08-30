@@ -257,6 +257,12 @@ void Nav2Client::SendWaypointsTimerCallback(){
       is_aborted_ = false;
     }
     break;
+
+  //case EXIT:
+  //  std::cout << "EXIT running" << std::endl;
+
+
+
     
   default:
     RCLCPP_INFO(this->get_logger(), "UNKNOWN ERROR");
