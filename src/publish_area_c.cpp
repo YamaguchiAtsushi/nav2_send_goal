@@ -18,9 +18,7 @@ private:
   void publish_message()
   {
     auto message = std_msgs::msg::String();
-    //message.data = "a";
-    message.data = "b";
-    //message.data = "c";
+    message.data = "c";
     RCLCPP_INFO(this->get_logger(), "Publishing: '%s'", message.data.c_str());
     publisher_->publish(message);
   }

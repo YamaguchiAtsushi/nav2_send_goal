@@ -14,7 +14,10 @@
 #include "nav2_msgs/action/navigate_through_poses.hpp"
 #include "nav2_msgs/action/follow_waypoints.hpp"
 #include "nav2_msgs/action/navigate_to_pose.hpp"
+
 #include "nav_msgs/msg/odometry.hpp"
+
+#include "std_msgs/msg/string.hpp"
 
 #include "geometry_msgs/msg/pose_stamped.hpp"
 #include "geometry_msgs/msg/twist.hpp"
@@ -39,6 +42,8 @@
 #define SEND_WAYPOINTS3 8
 #define SEND_WAYPOINTS4 9
 #define APPROACH_POINT 10
+#define APPROACH_AREA 11
+
 
 
 
@@ -70,14 +75,18 @@ private:
   void SendWaypointsTimerCallback();
   void PoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg);
   void OdomCallback(const nav_msgs::msg::Odometry::SharedPtr msg);
+  void AreaCallback(const std_msgs::msg::String::SharedPtr msg);
   size_t SendWaypointsOnce(size_t sending_index);
 
 private:
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr twist_pub_;
   rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr pose_sub_;
   rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr area_sub_;
+
 
   geometry_msgs::msg::Pose current_pose_;
+  std_msgs::msg::String area_character_;
   //geometry_msgs::msg::Twist twist_msg;
   
 
@@ -89,6 +98,9 @@ private:
   std::string waypoints_file_2_;
   std::string waypoints_file_3_;
   std::string waypoints_file_4_;
+  std::string waypoints_file_5_;
+  std::string waypoints_file_6_;
+  
   std::vector<std::string> csv_file_;//自分で追加
   rclcpp_action::Client<nav2_msgs::action::NavigateThroughPoses>::SharedPtr nav_through_poses_action_client_;
   rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateThroughPoses>::SharedPtr nav_through_poses_goal_handle_;
@@ -101,6 +113,7 @@ private:
   size_t start_index_;
 
   int find_point_;//初期化してない
+  int find_character_;
   int goal_point_;//初期化してない
 
 
@@ -115,6 +128,7 @@ private:
   int send_waypoint2_flag;
   int send_waypoint3_flag;
   int send_waypoint4_flag;
+  int approach_area_flag;
 
   double current_yaw_;
 

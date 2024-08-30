@@ -11,6 +11,8 @@ Nav2Client::Nav2Client() : rclcpp::Node("nav2_send_goal"), id_(0)
   latched_qos.transient_local();
   twist_pub_ = create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
   pose_sub_ = create_subscription<geometry_msgs::msg::PoseStamped>("pose", 10, std::bind(&Nav2Client::PoseCallback, this, std::placeholders::_1));
+  area_sub_ = create_subscription<std_msgs::msg::String>("area", 10, std::bind(&Nav2Client::AreaCallback, this, std::placeholders::_1));
+
   odom_sub_ = create_subscription<nav_msgs::msg::Odometry>("odom", 10, std::bind(&Nav2Client::OdomCallback, this, std::placeholders::_1));
 
 
@@ -36,16 +38,20 @@ Nav2Client::Nav2Client() : rclcpp::Node("nav2_send_goal"), id_(0)
   send_goal_options_.result_callback = std::bind(&Nav2Client::NavThroughPosesResultCallback, this, std::placeholders::_1);
   send_goal_options_.goal_response_callback = std::bind(&Nav2Client::NavThroughPosesGoalResponseCallback, this, std::placeholders::_1);
 
-  waypoints_file_1_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints1.csv";//自分でつけた
-  waypoints_file_2_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints2.csv";//自分でつけた
-  waypoints_file_3_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints3.csv";//自分でつけた
-  waypoints_file_4_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints4.csv";//自分でつけた
+  waypoints_file_1_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints_1.csv";//自分でつけた
+  waypoints_file_2_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints_2.csv";//自分でつけた
+  waypoints_file_3_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints_3.csv";//自分でつけた
+  waypoints_file_4_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints_a.csv";//自分でつけた
+  waypoints_file_5_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints_b.csv";//自分でつけた
+  waypoints_file_6_ = "/home/yamaguchi-a/turtlebot3_ws/src/nav2_send_goal/csv/waypoints_c.csv";//自分でつけた
 
-  csv_file_ = {waypoints_file_1_, waypoints_file_2_, waypoints_file_3_, waypoints_file_4_};//自分で追加
+
+  csv_file_ = {waypoints_file_1_, waypoints_file_2_, waypoints_file_3_, waypoints_file_4_, waypoints_file_5_, waypoints_file_6_,};//自分で追加
 
   send_waypoint2_flag = 0;
   send_waypoint3_flag = 0;
   send_waypoint4_flag = 0;
+  approach_area_flag = 0;
 
   // ロボットの現在位置と向きの初期化
   current_pose_.position.x = 0.0;
@@ -138,18 +144,31 @@ void Nav2Client::SendWaypointsTimerCallback(){
   {
   case SEND_WAYPOINTS1:
     std::cout << "SEND_WAYPOINYS1" << std::endl;
-    std::cout << "find_point_" << find_point_ << std::endl; 
+    //std::cout << "find_point_" << find_point_ << std::endl; 
+    std::cout << "find_character_" << find_character_ << std::endl; 
+
     if(sending_index < waypoints_.size()){
       sending_index =  SendWaypointsOnce(sending_index);
     }
     if(is_goal_achieved_){//trueになったら
+        //if(find_character_ == 1){
+          //is_goal_achieved_ = false;
+          //is_goal_accepted_ = false;
+          //is_aborted_ = false;
+          //state = APPROACH_AREA;
+          //std::cout << "APPROACH_POINT start" << std::endl;
+        //}
         if(find_point_ == 1){
           is_goal_achieved_ = false;
           is_goal_accepted_ = false;
           is_aborted_ = false;
           state = APPROACH_POINT;
+          //state = APPROACH_AREA;
           std::cout << "APPROACH_POINT start" << std::endl;
-    }
+        }
+        else{
+          state = SEND_WAYPOINTS2;
+        }
   }
     break;
 
@@ -190,24 +209,6 @@ void Nav2Client::SendWaypointsTimerCallback(){
     }
     break;
 
-  case SEND_WAYPOINTS4:
-    std::cout << "SEND_WAYPOINYS4" << std::endl;
-    if (send_waypoint4_flag == 0){
-      ReadWaypointsFromCSV(csv_file_[3], waypoints_);
-    }
-    send_waypoint4_flag = 1;
-    //sending_index = 0; //いらないかも
-    if(sending_index < waypoints_.size()){
-      sending_index =  SendWaypointsOnce(sending_index);
-    }
-    if (is_goal_achieved_) {  // waypoint2に到達したら
-      state = FINISH_SENDING;
-      is_goal_achieved_ = false;
-      is_goal_accepted_ = false;
-      is_aborted_ = false;
-    }
-    break;
-
   case FINISH_SENDING:
     RCLCPP_INFO(this->get_logger(), "Waypoint sending is Finisihed.");
     timer_->cancel();
@@ -218,10 +219,43 @@ void Nav2Client::SendWaypointsTimerCallback(){
     //twist_pub_->publish(twist_msg);
     std::cout << "APPROACH_POINT running" << std::endl;
     if(goal_point_ == 1){
-      state = SEND_WAYPOINTS2;
+      if(find_character_ == 1){
+        state = APPROACH_AREA;
+      }
     }
-    
+    break;
 
+  case APPROACH_AREA:
+    std::cout << "APPROACH_AREA running" << std::endl;
+    //以下、SEND_WAYPOINTの改変
+    //一度しかwaypointを読み込まないようにしている
+    if (approach_area_flag == 0 ){
+      if(area_character_.data == "a"){
+        ReadWaypointsFromCSV(csv_file_[3], waypoints_);
+      }
+      if(area_character_.data == "b"){
+        std::cout << "b received" << std::endl;
+        ReadWaypointsFromCSV(csv_file_[4], waypoints_);
+      }
+      if(area_character_.data == "c"){
+        std::cout << "c received" << std::endl;
+        ReadWaypointsFromCSV(csv_file_[5], waypoints_);
+      }
+      
+    }
+    approach_area_flag = 1;
+    //sending_index = 0; //いらないかも
+    if(sending_index < waypoints_.size()){
+      sending_index =  SendWaypointsOnce(sending_index);
+        std::cout << "sendwaypointsonce after c received" << std::endl;
+
+    }
+    if (is_goal_achieved_) {  // waypoint2に到達したら
+      state = SEND_WAYPOINTS3;
+      is_goal_achieved_ = false;
+      is_goal_accepted_ = false;
+      is_aborted_ = false;
+    }
     break;
     
   default:
@@ -338,7 +372,7 @@ void Nav2Client::NavThroughPosesFeedbackCallback(const GoalHandleNavigateNavigat
 
 void Nav2Client::PoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr msg){
 
-  //geometry_msgs::msg::Pose current_pose_;
+  //geometry_msgs::msg::Pose _;
   find_point_ = 1;
 
   // 目標座標を取得
@@ -378,6 +412,11 @@ void Nav2Client::PoseCallback(const geometry_msgs::msg::PoseStamped::SharedPtr m
   }
 
   twist_pub_->publish(twist_msg);
+}
+
+void Nav2Client::AreaCallback(const std_msgs::msg::String::SharedPtr msg){
+  find_character_ = 1;
+  area_character_.data = msg->data;
 }
 
 void Nav2Client::OdomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)

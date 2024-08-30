@@ -38,8 +38,17 @@ ament_target_dependencies(publish_point rclcpp tf2_geometry_msgs)
 ament_auto_add_executable(move_point src/move_point.cpp)
 ament_target_dependencies(move_point rclcpp nav_msgs tf2 tf2_geometry_msgs)
 
-ament_auto_add_executable(publish_area src/publish_area.cpp)
+ament_auto_add_executable(publish_area src/publish_area_a.cpp)
 ament_target_dependencies(publish_area rclcpp std_msgs)
+
+ament_auto_add_executable(publish_area_a src/publish_area_a.cpp)
+ament_target_dependencies(publish_area_a rclcpp std_msgs)
+
+ament_auto_add_executable(publish_area_b src/publish_area_b.cpp)
+ament_target_dependencies(publish_area_b rclcpp std_msgs)
+
+ament_auto_add_executable(publish_area_c src/publish_area_c.cpp)
+ament_target_dependencies(publish_area_c rclcpp std_msgs)
 
 install(TARGETS
   nav2_send_goal
@@ -59,7 +68,19 @@ install(TARGETS
 install(TARGETS
   publish_area
   DESTINATION lib/${PROJECT_NAME})
-  
+
+  install(TARGETS
+  publish_area_a
+  DESTINATION lib/${PROJECT_NAME})
+
+  install(TARGETS
+  publish_area_b
+  DESTINATION lib/${PROJECT_NAME})
+
+  install(TARGETS
+  publish_area_c
+  DESTINATION lib/${PROJECT_NAME})
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
